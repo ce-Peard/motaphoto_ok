@@ -277,8 +277,8 @@ fieldset {
  */
 legend {
 	box-sizing: border-box;
-	color: inherit;
-	display: table;
+	color: inherit; 
+	display: table; 
 	max-width: 100%;
 	padding: 0;
 	white-space: normal;
@@ -648,8 +648,8 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
-	width: 100%;
+	/* display: block;
+	width: 100%; */
 }
 
 .main-navigation ul {
@@ -796,6 +796,11 @@ textarea {
 	margin-bottom: 0;
 	margin-top: 0;
 	padding: 0;
+}
+
+.custom-logo {
+	height: 14px;
+	width: 216px;
 }
 
 /* Make sure logo link wraps around logo image. */
@@ -966,4 +971,63 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+ 
+
+
+/*********NOUVEAU CODE*********/
+
+/********************************/
+/*********MODAL POP-UP***********/
+/********************************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/********************************/
+/*********HEADER***********/
+/********************************/
+
+.site-header {
+    display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+    margin: 0 auto;
+	padding: 0 146px 0 146px;
 }

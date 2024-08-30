@@ -20,6 +20,9 @@
 			'menu_id'        => 'footer-menu',
 		)
 	);
+
+	get_template_part('template-parts/contact', 'modale');
+
 	?>
 </footer><!-- #colophon -->
 </div><!-- #page -->

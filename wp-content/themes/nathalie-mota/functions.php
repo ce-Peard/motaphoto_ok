@@ -12,6 +12,19 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+
+/*******************************************/
+/*********APPEL FICHIER STYLE.CSS***********/
+/*******************************************/
+
+function nathaliemota_enqueue_styles() {
+    wp_enqueue_style( 'nathaliemota-style', get_stylesheet_uri(), array(), '1.0.0' );
+    wp_enqueue_script( 'nathaliemota-script', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'nathaliemota_enqueue_styles' );
+
+
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
