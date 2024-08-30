@@ -16,11 +16,11 @@ get_header();
 		while ( have_posts() ) :
 			the_post(); ?>
 			<h1><?php the_title(); ?></h1>
+			<p>Référence : <?php echo get_field('reference'); ?></p>
 			<p>Catégorie : <?php echo strip_tags( get_the_term_list( get_the_ID(), 'categorie' ) );?></p>
-			<p>format: <?php echo strip_tags( get_the_term_list( get_the_ID(), 'format' ) );?></p>
-			<p>date: <?php echo the_time('Y'); ?></p>
-			<p>type: <?php echo get_field('type'); ?></p>
-			<p>reference: <?php echo get_field('reference'); ?></p>
+			<p>Format : <?php echo strip_tags( get_the_term_list( get_the_ID(), 'format' ) );?></p>
+			<p>Type : <?php echo get_field('type'); ?></p>
+			<p>Date : <?php echo the_time('Y'); ?></p>
 			<?php the_post_thumbnail(); ?>
 		<?php endwhile; // End of the loop. ?>
 
