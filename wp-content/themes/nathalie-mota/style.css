@@ -71,6 +71,23 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
+
+
+/*************************/
+/*********FONTS***********/
+/*************************/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/nomdelapolice.woff2') format('woff2'),
+    src: url('../assets/fonts/Poppins/nomdelapolice.ttf') format('truetype');
+    /* font-weight: normal;
+    font-style: normal; */
+}
+
+
+
+
 /* Sections
 	 ========================================================================== */
 
@@ -403,9 +420,9 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
-	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 h1,
@@ -608,6 +625,8 @@ textarea {
 	border-radius: 8px;
 	padding: 3px;
 	max-width: 263px;
+	max-height: 40px;
+	top: 23px;
 	display: block;
 	margin: 0 auto;
 }
@@ -1021,10 +1040,51 @@ textarea {
     cursor: pointer;
 }
 
+/* texte */
+.wpcf7-form textarea {
+	color: #404040;
+	font-family: 'Poppins', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
 
-/********************************/
+.wpcf7 p {
+	display: flex;
+justify-content: center;}
+
+.wpcf7 p label {
+	display: block;
+	width: 263px;
+}
+
+.wpcf7 input {
+	width: 263px;
+}
+
+.wpcf7-submit {
+	margin-left: 72px;
+}
+/* cases */
+.wpcf7-form-control {
+	display: block;
+	height: 80px;
+	width: fit-content;
+}
+
+
+/* .wpcf7-form-control-wrap textarea {
+	border: 1px solid #B8BBC2;
+	border-radius: 8px;
+	padding: 3px;
+	max-width: 263px;
+	top: 23px;
+	display: block;
+	margin: 0 auto;
+} */
+
+/**************************/
 /*********HEADER***********/
-/********************************/
+/**************************/
 
 .site-header {
     display: flex;
