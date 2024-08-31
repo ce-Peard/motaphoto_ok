@@ -77,14 +77,37 @@ html {
 /*********FONTS***********/
 /*************************/
 
+/* H1 */
 @font-face {
-    font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins/nomdelapolice.woff2') format('woff2'),
-    src: url('../assets/fonts/Poppins/nomdelapolice.ttf') format('truetype');
-    /* font-weight: normal;
-    font-style: normal; */
+    font-family: 'SpaceMono';
+    src: url('../assets/fonts/SpaceMono/SpaceMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
 
+/* H2 */
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../assets/fonts/SpaceMono/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* H3 et DESCRIPTION PHOTO*/
+@font-face {
+    font-family: 'SpaceMono';
+    src: url('../assets/fonts/SpaceMono/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Paragraphe */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
 
 
@@ -110,9 +133,29 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
+
+h2 {
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 /* Grouping content
 	 ========================================================================== */
@@ -1082,14 +1125,56 @@ justify-content: center;}
 	margin: 0 auto;
 } */
 
-/**************************/
-/*********HEADER***********/
-/**************************/
+/******************************/
+/*********MENUHEADER***********/
+/******************************/
 
-.site-header {
+.site-header { 
     display: flex;
 	justify-content: space-between;
 	max-width: 1440px;
-    margin: 0 auto;
+    margin: 31px 0 31px 0;
 	padding: 0 146px 0 146px;
 }
+
+/* espacement entre les liens */	
+#menu-item-16, #menu-item-11 {
+	padding-left: 36px;
+}
+
+/******************************/
+/*********MENU FOOTER***********/
+/******************************/ 
+
+.menu-footer-container {
+	display: flex;
+	justify-content: center;
+}
+
+.site-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#footer-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 620px;
+	max-width: 1440px;
+    margin: 31px 0 31px 0;
+	/* padding: 0 146px 0 146px; */
+	list-style-type: none;
+    padding-left: 0; 
+}
+/* polices */
+#primary-menu, #footer-menu {
+	text-transform: uppercase;
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 16px;
+	line-height: 23.7px;
+}
+
