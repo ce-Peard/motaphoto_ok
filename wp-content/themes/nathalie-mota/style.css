@@ -1216,13 +1216,15 @@ justify-content: center;}
 	line-height: 23.7px;
 }
 
-/********************************/
-/*********SINGLE PHOTOS**********/
-/********************************/ 
+/*************************************/
+/*********SINGLE PHOTOS PAGE**********/
+/*************************************/ 
 
-/* .main-photo-container {
-	max-width: 1148px;
-} */
+.main-photo-container {
+    max-width: 1148px !important;
+    width: 100% !important; /* Assurez-vous que la largeur est définie */
+    margin: 0 auto !important; /* Centrer le conteneur */
+}
 
 .photo-container {
 	display: flex;
@@ -1233,14 +1235,14 @@ justify-content: center;}
 .photo-details-container {
 	border-bottom: 1px solid black;
 	margin-bottom: 3px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 
 .photo-details {
 	display: flex;
 	flex-direction: column;
 	width: 420px;
-	/* line-height: 20.73px; */
+
 }
 
 .photo-details p {
@@ -1253,3 +1255,59 @@ justify-content: center;}
 .photo-thumbnail, .photo-details-container {
 	flex: 1;
 }
+
+/*********CONTACT SECTION**********/
+
+.photo-contact {
+	display: flex;
+	align-items: center;
+	height: 119px;
+	border-bottom: 1px solid black;
+}
+
+.photo-contact-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1148px !important;
+    width: 100% !important; /* Assurez-vous que la largeur est définie */
+    margin: 0 auto !important; 
+}
+
+.photo-contact-content p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+}
+
+.photo-contact-content, .photo-navigation {
+	flex: 1;
+}
+
+.vous-aimerez-aussi {
+	padding-top: 77px;
+}
+
+/*********PHOTOS NAVIGATION**********/
+
+.photo-navigation-content {
+	display: flex;
+    justify-content: flex-end;
+}
+
+/*********CONTACT BUTTON STYLE**********/
+
+#myBtn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 272px;
+	height: 50px;
+	border-radius: 2px 0px 0px 0px;
+	font-family: 'SpaceMono', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 17.77px;
+}
+
