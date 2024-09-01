@@ -80,7 +80,7 @@ html {
 /* H1 */
 @font-face {
     font-family: 'SpaceMono';
-    src: url('../assets/fonts/SpaceMono/SpaceMono-BoldItalic.ttf') format('truetype');
+    src: url('./assets/fonts/SpaceMono/SpaceMono-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
@@ -88,7 +88,7 @@ html {
 /* H2 */
 @font-face {
     font-family: 'SpaceMono';
-    src: url('../assets/fonts/SpaceMono/SpaceMono-Italic.ttf') format('truetype');
+    src: url('./assets/fonts/SpaceMono/SpaceMono-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
@@ -96,7 +96,7 @@ html {
 /* H3 et DESCRIPTION PHOTO*/
 @font-face {
     font-family: 'SpaceMono';
-    src: url('../assets/fonts/SpaceMono/SpaceMono-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/SpaceMono/SpaceMono-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -104,11 +104,36 @@ html {
 /* Paragraphe */
 @font-face {
     font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    src: url('./assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
+h1 {
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+    margin: 0.67em 0; 
+}
+
+h2 {
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h3 {
+	font-family: 'SpaceMono', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+	font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 
 
 /* Sections
@@ -132,29 +157,11 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
-	font-family: 'SpaceMono', sans-serif;
-    font-weight: 700;
-    font-style: italic;
+ h1 {
+    font-size: 2em; /* Ajustez la taille de la police */
+    margin: 0.67em 0; /* Ajustez la marge */
 }
 
-h2 {
-	font-family: 'SpaceMono', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-h3 {
-	font-family: 'SpaceMono', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-p {
-	font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
 
 
 /* Grouping content
@@ -1137,6 +1144,25 @@ justify-content: center;}
 	padding: 0 146px 0 146px;
 }
 
+.site-header a {
+	text-decoration: none;
+	color: #000000;
+}
+.site-header a:hover {
+	text-decoration: none;
+	color: #E00000;
+	;
+}
+.site-header a:visited {
+	text-decoration: none;
+	color: none;
+}
+.site-header a:active {
+	text-decoration: none;
+	color: none;
+}
+
+
 /* espacement entre les liens */	
 #menu-item-16, #menu-item-11 {
 	padding-left: 36px;
@@ -1155,6 +1181,25 @@ justify-content: center;}
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	border-top: 1px solid black;
+	margin-top: 40px;
+}
+.site-footer a {
+	text-decoration: none;
+	color: #000000;
+}
+.site-footer a:hover {
+	text-decoration: none;
+	color: #E00000;
+	;
+}
+.site-footer a:visited {
+	text-decoration: none;
+	color: none;
+}
+.site-footer a:active {
+	text-decoration: none;
+	color: none;
 }
 
 #footer-menu {
@@ -1163,15 +1208,14 @@ justify-content: center;}
 	justify-content: space-between;
 	width: 620px;
 	max-width: 1440px;
-    margin: 31px 0 31px 0;
-	/* padding: 0 146px 0 146px; */
+    margin: 10px 0 10px 0;
 	list-style-type: none;
     padding-left: 0; 
 }
 /* polices */
 #primary-menu, #footer-menu {
 	text-transform: uppercase;
-	font-family: 'SpaceMono', sans-serif;
+	font-family: 'SpaceMono', sans-serif !important;
     font-weight: 400;
     font-style: normal;
 	font-size: 16px;
