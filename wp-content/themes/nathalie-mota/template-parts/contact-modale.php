@@ -11,3 +11,18 @@
   </div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+    $('#myBtn').on('click', function() {
+        var refPhoto = $('#ref-photo').text().replace('Référence : ', '');
+        $('#myModal').find('input[name="ref-photo"]').val(refPhoto);
+        $('#myModal').show();
+    });
+
+    $('.close').on('click', function() {
+        $('#myModal').hide();
+    });
+});
+</script>

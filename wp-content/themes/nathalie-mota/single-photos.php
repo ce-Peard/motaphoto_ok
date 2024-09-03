@@ -20,7 +20,7 @@ get_header();
 					<div class="photo-details-container"> 
 						<div class="photo-details"> 
 							<h2><?php the_title(); ?></h2>
-							<p>Référence : <?php echo get_field('reference'); ?></p>
+							<p id="ref-photo">Référence : <?php echo get_field('reference'); ?></p>
 							<p>Catégorie : <?php echo strip_tags( get_the_term_list( get_the_ID(), 'categorie' ) );?></p>
 							<p>Format : <?php echo strip_tags( get_the_term_list( get_the_ID(), 'format' ) );?></p>
 							<p>Type : <?php echo get_field('type'); ?></p>
