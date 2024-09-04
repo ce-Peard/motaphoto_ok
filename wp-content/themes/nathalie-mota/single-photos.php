@@ -60,7 +60,7 @@ get_header();
 					<h3>Vous aimerez aussi</h3>
 				</div>
 				<div class="photo-related">
-					<?php
+				<?php
 					$categories = get_the_terms(get_the_ID(), 'categorie');
 					if ($categories && !is_wp_error($categories)) {
 						$category_ids = wp_list_pluck($categories, 'term_id');
