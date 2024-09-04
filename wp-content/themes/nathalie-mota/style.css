@@ -1313,6 +1313,49 @@ textarea {
     display: inline-block;
 }
 
+/* .nav-arrow {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+/*********FLECHES NAVIGATION**********/
+
+.photo-navigation {
+    display: flex;
+    justify-content: flex-end; /* Aligner les flèches à droite */
+    align-items: flex-end; /* Aligner les flèches en bas */
+    position: relative; /* Pour positionner les miniatures par rapport à ce conteneur */
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Espacement entre les flèches */
+}
+
+.nav-link img {
+    display: block;
+}
+
+.nav-thumbnail {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    z-index: 10;
+    width: calc(2 * 20px + 2 * 10px); /* Largeur égale à celle des deux flèches et de l'espace entre elles */
+    height: calc((2 * 20px + 2 * 10px) * 9 / 16); /* Calculer la hauteur pour respecter le format 16/9 */
+    object-fit: cover; /* Adapter l'image au conteneur */
+}
+
+.nav-link:hover .nav-thumbnail {
+    display: block;
+}
+
 /*********CONTACT BUTTON STYLE**********/
 
 #myBtn {
