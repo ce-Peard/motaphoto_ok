@@ -29,7 +29,7 @@ get_header();
 					</div>
 					<div class="photo-thumbnail">
 						<?php the_post_thumbnail(); ?>
-					</div> <
+					</div> 
 				</div>
 				<div class="photo-contact">
 					<div class="photo-contact-content">
@@ -38,8 +38,19 @@ get_header();
 					</div>
 					<div class="photo-navigation">
 						<div class="photo-navigation-content">
-							<p><</p>
-							<p>></p>
+							<?php
+							$prev_post = get_previous_post();
+							$next_post = get_next_post();
+							if ($prev_post) : ?>
+								<a href="<?php echo get_permalink($prev_post->ID); ?>" class="nav-link prev-link">
+									< <span class="nav-thumbnail"><?php echo get_the_post_thumbnail($prev_post->ID, 'thumbnail'); ?></span>
+								</a>
+							<?php endif; ?>
+							<?php if ($next_post) : ?>
+								<a href="<?php echo get_permalink($next_post->ID); ?>" class="nav-link next-link">
+									> <span class="nav-thumbnail"><?php echo get_the_post_thumbnail($next_post->ID, 'thumbnail'); ?></span>
+								</a>
+							<?php endif; ?>
 						</div>
 					</div>
 				</div>

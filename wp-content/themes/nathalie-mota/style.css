@@ -1305,6 +1305,14 @@ textarea {
     justify-content: flex-end;
 }
 
+.nav-thumbnail {
+    display: none;
+}
+
+.nav-link:hover .nav-thumbnail {
+    display: inline-block;
+}
+
 /*********CONTACT BUTTON STYLE**********/
 
 #myBtn {
