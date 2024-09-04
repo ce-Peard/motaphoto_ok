@@ -60,6 +60,35 @@ get_header();
 					<h3>Vous aimerez aussi</h3>
 				</div>
 				<div class="photo-related">
+					<?php
+					$categories = get_the_terms(get_the_ID(), 'categorie');
+					if ($categories && !is_wp_error($categories)) {
+						$category_ids = wp_list_pluck($categories, 'term_id');
+						$args = array(
+							'post_type' => 'photos',
+							'posts_per_page' => 2,
+							'tax_query' => array(
+								array(
+									'taxonomy' => 'categorie',
+									'field'    => 'term_id',
+									'terms'    => $category_ids,
+								),
+							),
+						);
+						$related_photos = new WP_Query($args);
+						if ($related_photos->have_posts()) {
+							while ($related_photos->have_posts()) {
+								$related_photos->the_post(); ?>
+								<div class="related-photo">
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail('landscape'); ?>
+									</a>
+								</div>
+							<?php }
+							wp_reset_postdata();
+						}
+					}
+					?>
 				</div>
 			</div>
 			<?php endwhile;?>
