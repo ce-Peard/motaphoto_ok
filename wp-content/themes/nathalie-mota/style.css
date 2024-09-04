@@ -1356,6 +1356,31 @@ textarea {
     display: block;
 }
 
+
+/*********************************/
+/*********RELATED PHOTOS**********/
+/*********************************/ 
+
+.photo-related {
+	display: flex;
+	height: 564px;
+}
+
+.related-photo {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.related-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
 /*********CONTACT BUTTON STYLE**********/
 
 #myBtn {

@@ -64,14 +64,23 @@ get_header();
 					$categories = get_the_terms(get_the_ID(), 'categorie');
 					if ($categories && !is_wp_error($categories)) {
 						$category_ids = wp_list_pluck($categories, 'term_id');
+						$current_reference = get_field('reference');
 						$args = array(
 							'post_type' => 'photos',
 							'posts_per_page' => 2,
+							'post__not_in' => array(get_the_ID()), // Exclure la photo actuelle
 							'tax_query' => array(
 								array(
 									'taxonomy' => 'categorie',
 									'field'    => 'term_id',
 									'terms'    => $category_ids,
+								),
+							),
+							'meta_query' => array(
+								array(
+									'key'     => 'reference',
+									'value'   => $current_reference,
+									'compare' => '!=', // Exclure les photos avec la même référence
 								),
 							),
 						);
