@@ -36,20 +36,22 @@ get_header();
 
 <main id="primary" class="site-main">
 
-<section class="photo-gallery grid-gallery two-columns">
-	<?php
-	$args = array(
-		'post_type' => 'photos',
-		'posts_per_page' => 8,
-		'order' => 'DESC',
-		'orderby' => 'date',
-	);
-	set_query_var('related_photos_args', $args);
-	get_template_part('template-parts/photo-block');
+	<section class="photo-gallery grid-gallery two-columns">
+		<?php
+		$args = array(
+			'post_type' => 'photos',
+			'posts_per_page' => 8,
+			'order' => 'DESC',
+			'orderby' => 'date',
+		);
+		set_query_var('related_photos_args', $args);
+		get_template_part('template-parts/photo-block');
+		?>
+	</section>
+	<div class="load-more-container">
+		<button id="load-more-photos" type="button">Charger plus</button>
 
-	?>
-</section>
-
+	</div>
 </main>
 
 <?php

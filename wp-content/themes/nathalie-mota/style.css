@@ -1411,6 +1411,7 @@ textarea {
   display: flex;
   position: relative;
   z-index: 1;
+  height: auto; /* ou simplement ne pas définir de hauteur */
   margin: auto;
 }
 
@@ -1468,9 +1469,9 @@ textarea {
   padding: 0 20px;
 }
 
-/*********CONTACT BUTTON STYLE**********/
+/*********MOTA BUTTON STYLE**********/
 
-#myBtn {
+#load-more-photos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1482,4 +1483,25 @@ textarea {
   font-style: normal;
   font-size: 12px;
   line-height: 17.77px;
+}
+
+#mota_Btn_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 272px;
+  height: 50px;
+  border-radius: 2px 0px 0px 0px;
+  font-family: "SpaceMono", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 17.77px;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
