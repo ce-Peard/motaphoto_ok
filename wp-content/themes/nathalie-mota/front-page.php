@@ -49,8 +49,15 @@ get_header();
 		?>
 	</section>
 	<div class="load-more-container">
-		<button id="load-more-photos" type="button">Charger plus</button>
-
+		<button
+			id="load-more-photos"
+			type="button"
+			class="js-load-photos"
+			data-nonce="<?php echo wp_create_nonce('load_more_photos'); ?>"
+			data-action="load_more_photos"
+			data-ajaxurl="<?php echo admin_url('admin-ajax.php'); ?>"
+		>Charger plus</button>
+		
 	</div>
 </main>
 
