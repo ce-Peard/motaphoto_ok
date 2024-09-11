@@ -38,6 +38,8 @@ get_header();
 	<section class="filter-container">
 		<div class="filter-container1">
 			<!-- Premier menu déroulant -->
+			<input type="hidden" name="nonce" id='nonce' value="<?php echo wp_create_nonce('nathalie_mota_nonce'); ?>">
+			<input type="hidden" name="ajaxurl" id='ajaxurl' value="<?php echo admin_url('admin-ajax.php'); ?>">
 			<select name="categories" id="menu1-categories" aria-label="Catégories" class="filter-uppercase">
 				<option value="" disabled selected hidden>Catégories</option>
 				<?php

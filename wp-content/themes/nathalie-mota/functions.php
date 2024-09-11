@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Nathalie Mota functions and definitions
  *
@@ -7,9 +8,9 @@
  * @package Nathalie_Mota
  */
 
-if ( ! defined( '_S_VERSION' ) ) {
+if (! defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define('_S_VERSION', '1.0.0');
 }
 
 
@@ -17,12 +18,13 @@ if ( ! defined( '_S_VERSION' ) ) {
 /*********APPEL FICHIER STYLE.CSS***********/
 /*******************************************/
 
-function nathaliemota_enqueue_styles() {
-    wp_enqueue_style( 'nathaliemota-style', get_stylesheet_uri(), array(), '1.0.0' );
-    wp_enqueue_script( 'jquery' ); // Assurez-vous que jQuery est chargé
-    wp_enqueue_script( 'nathaliemota-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true );
+function nathaliemota_enqueue_styles()
+{
+	wp_enqueue_style('nathaliemota-style', get_stylesheet_uri(), array(), '1.0.0');
+	wp_enqueue_script('jquery'); // Assurez-vous que jQuery est chargé
+	wp_enqueue_script('nathaliemota-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
 }
-add_action( 'wp_enqueue_scripts', 'nathaliemota_enqueue_styles' );
+add_action('wp_enqueue_scripts', 'nathaliemota_enqueue_styles');
 
 
 
@@ -33,17 +35,18 @@ add_action( 'wp_enqueue_scripts', 'nathaliemota_enqueue_styles' );
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function nathalie_mota_setup() {
+function nathalie_mota_setup()
+{
 	/*
 		* Make theme available for translation.
 		* Translations can be filed in the /languages/ directory.
 		* If you're building a theme based on Nathalie Mota, use a find and replace
 		* to change 'nathalie-mota' to the name of your theme in all the template files.
 		*/
-	load_theme_textdomain( 'nathalie-mota', get_template_directory() . '/languages' );
+	load_theme_textdomain('nathalie-mota', get_template_directory() . '/languages');
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+	add_theme_support('automatic-feed-links');
 
 	/*
 		* Let WordPress manage the document title.
@@ -51,20 +54,20 @@ function nathalie_mota_setup() {
 		* hard-coded <title> tag in the document head, and expect WordPress to
 		* provide it for us.
 		*/
-	add_theme_support( 'title-tag' );
+	add_theme_support('title-tag');
 
 	/*
 		* Enable support for Post Thumbnails on posts and pages.
 		*
 		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		*/
-	add_theme_support( 'post-thumbnails' );
+	add_theme_support('post-thumbnails');
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'nathalie-mota' ),
-			'menu-2' => esc_html__( 'Footer', 'nathalie-mota' ),
+			'menu-1' => esc_html__('Primary', 'nathalie-mota'),
+			'menu-2' => esc_html__('Footer', 'nathalie-mota'),
 		)
 	);
 
@@ -98,7 +101,7 @@ function nathalie_mota_setup() {
 	);
 
 	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
+	add_theme_support('customize-selective-refresh-widgets');
 
 	/**
 	 * Add support for core custom logo.
@@ -115,7 +118,7 @@ function nathalie_mota_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'nathalie_mota_setup' );
+add_action('after_setup_theme', 'nathalie_mota_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -124,22 +127,24 @@ add_action( 'after_setup_theme', 'nathalie_mota_setup' );
  *
  * @global int $content_width
  */
-function nathalie_mota_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'nathalie_mota_content_width', 640 );
+function nathalie_mota_content_width()
+{
+	$GLOBALS['content_width'] = apply_filters('nathalie_mota_content_width', 640);
 }
-add_action( 'after_setup_theme', 'nathalie_mota_content_width', 0 );
+add_action('after_setup_theme', 'nathalie_mota_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function nathalie_mota_widgets_init() {
+function nathalie_mota_widgets_init()
+{
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'nathalie-mota' ),
+			'name'          => esc_html__('Sidebar', 'nathalie-mota'),
 			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'nathalie-mota' ),
+			'description'   => esc_html__('Add widgets here.', 'nathalie-mota'),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -147,22 +152,23 @@ function nathalie_mota_widgets_init() {
 		)
 	);
 }
-add_action( 'widgets_init', 'nathalie_mota_widgets_init' );
+add_action('widgets_init', 'nathalie_mota_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function nathalie_mota_scripts() {
-	wp_enqueue_style( 'nathalie-mota-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'nathalie-mota-style', 'rtl', 'replace' );
+function nathalie_mota_scripts()
+{
+	wp_enqueue_style('nathalie-mota-style', get_stylesheet_uri(), array(), _S_VERSION);
+	wp_style_add_data('nathaliemota-style', 'rtl', 'replace');
 
-	wp_enqueue_script( 'nathalie-mota-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script('nathaliemota-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true);
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+	if (is_singular() && comments_open() && get_option('thread_comments')) {
+		wp_enqueue_script('comment-reply');
 	}
 }
-add_action( 'wp_enqueue_scripts', 'nathalie_mota_scripts' );
+add_action('wp_enqueue_scripts', 'nathalie_mota_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -187,24 +193,124 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Load Jetpack compatibility file.
  */
-if ( defined( 'JETPACK__VERSION' ) ) {
+if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/****************************************************/
+/*********CHARGER LE SCRIPT FILTRES PHOTOS***********/
+/****************************************************/
+
+function enqueue_filter_script() {
+    if (is_front_page()) {
+        wp_enqueue_script('filter-script', get_template_directory_uri() . '/js/script.js', array('jquery'), null, true);
+        wp_localize_script('filter-script', 'filter_params', array(
+            'ajaxurl' => admin_url('admin-ajax.php'),
+            'nonce' => wp_create_nonce('filter_nonce')
+        ));
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_filter_script');
+
+
+/************************************************/
+/*********FILTRER LES PHOTOS AVEC AJAX***********/
+/************************************************/
+
+function filter_images()
+{
+    $category = !empty($_POST['category']) ? sanitize_text_field($_POST['category']) : '';
+    $format = !empty($_POST['format']) ? sanitize_text_field($_POST['format']) : '';
+    $sort = !empty($_POST['sort']) ? sanitize_text_field($_POST['sort']) : '';
+
+    // error_log("Catégorie: " . $category);
+    // error_log("Format: " . $format);
+    // error_log("Tri: " . $sort);
+
+    $args = array(
+        'post_type' => 'photos',
+        'posts_per_page' => 8,
+		'orderby' => 'date',
+		'order' => 'DESC',
+    );
+
+    $tax_query = array();
+
+    if ($category) {
+        $tax_query[] = array(
+            'taxonomy' => 'categorie',
+            'field' => 'slug',
+            'terms' => $category,
+        );
+    }
+
+    if ($format) {
+        $tax_query[] = array(
+            'taxonomy' => 'format',
+            'field' => 'slug',
+            'terms' => $format,
+        );
+    }
+
+    if (!empty($tax_query)) {
+        $args['tax_query'] = $tax_query;
+        // $args['tax_query']['relation'] = 'AND';
+    }
+
+    if ($sort) {
+        if ($sort == 'date_desc') {
+            $args['orderby'] = 'date';
+            $args['order'] = 'DESC';
+        } elseif ($sort == 'date_asc') {
+            $args['orderby'] = 'date';
+            $args['order'] = 'ASC';
+        }
+    }
+
+    // error_log("Arguments de la requête: " . print_r($args, true));
+
+    $query = new WP_Query($args);
+    // ob_start();
+
+    if ($query->have_posts()) {
+        // error_log("Nombre de posts trouvés: " . $query->found_posts);
+		$html = '';
+        while ($query->have_posts()) {
+            $query->the_post();
+			$html .= get_template_part('template-parts/photo-block-ajax');
+        }
+    } else {
+        // error_log("Aucun post trouvé.");
+        echo '<p>Aucune image trouvée.</p>';
+    }
+
+    wp_reset_postdata();
+
+    // $html = ob_get_clean();
+    wp_send_json($html);
+}
+add_action('wp_ajax_filter_images', 'filter_images');
+add_action('wp_ajax_nopriv_filter_images', 'filter_images');
+
+
+
+
 
 
 /*************************************************/
 /*********CHARGER LE SCRIPT NATALIEMOTA***********/
 /*************************************************/
 
-function nathaliemota_assets() {
-    // Charger le script principal
-    wp_enqueue_script(
-        'nathaliemota_script', // Handle unique pour le script
-        get_template_directory_uri() . '/js/script.js', // Chemin vers le fichier script.js
-        array('jquery'), // Dépendances (ici jQuery)
-        '1.0', // Version du script
-        true // Charger dans le footer
-    );
+function nathaliemota_assets()
+{
+	// Charger le script principal
+	wp_enqueue_script(
+		'nathaliemota_script', // Handle unique pour le script
+		get_template_directory_uri() . '/js/script.js', // Chemin vers le fichier script.js
+		array('jquery'), // Dépendances (ici jQuery)
+		'1.0', // Version du script
+		true // Charger dans le footer
+	);
 }
 add_action('wp_enqueue_scripts', 'nathaliemota_assets');
 
@@ -212,43 +318,44 @@ add_action('wp_enqueue_scripts', 'nathaliemota_assets');
 /*********CHARGER PLUS DE PHOTOS AVEC AJAX***********/
 /****************************************************/
 
-function load_more_photos() {
-    check_ajax_referer('load_more_photos', 'nonce');
+function load_more_photos()
+{
+	check_ajax_referer('load_more_photos', 'nonce');
 
-    $paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
-    $posts_per_page = 8;
+	$paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
+	$posts_per_page = 8;
 
-    $args = array(
-        'post_type' => 'photos',
-        'posts_per_page' => $posts_per_page,
-        'paged' => $paged,
-        'order' => 'DESC',
-        'orderby' => 'date',
-    );
+	$args = array(
+		'post_type' => 'photos',
+		'posts_per_page' => $posts_per_page,
+		'paged' => $paged,
+		'order' => 'DESC',
+		'orderby' => 'date',
+	);
 
-    error_log("Loading page: " . $paged); // Ajoutez ce log
+	error_log("Loading page: " . $paged); // Ajoutez ce log
 
-    $query = new WP_Query($args);
-    $response = array();
+	$query = new WP_Query($args);
+	$response = array();
 
-    if ($query->have_posts()) {
-        ob_start();
-        while ($query->have_posts()) {
-            $query->the_post();
-            get_template_part('template-parts/photo-block-ajax');
-        }
-        $photos_html = ob_get_clean();
-        $response['html'] = $photos_html;
-        $response['has_more'] = $query->max_num_pages > $paged; // Cela doit être correct
-        error_log("Photos loaded: " . $query->found_posts); // Ajoutez ce log
-        wp_send_json_success($response);
-    } else {
-        error_log("No photos found for page " . $paged);
-        wp_send_json_error('No more photos');
-    }
+	if ($query->have_posts()) {
+		ob_start();
+		while ($query->have_posts()) {
+			$query->the_post();
+			get_template_part('template-parts/photo-block-ajax');
+		}
+		$photos_html = ob_get_clean();
+		$response['html'] = $photos_html;
+		$response['has_more'] = $query->max_num_pages > $paged; // Cela doit être correct
+		error_log("Photos loaded: " . $query->found_posts); // Ajoutez ce log
+		wp_send_json_success($response);
+	} else {
+		error_log("No photos found for page " . $paged);
+		wp_send_json_error('No more photos');
+	}
 
-    wp_reset_postdata();
-    wp_die();
+	wp_reset_postdata();
+	wp_die();
 }
 add_action('wp_ajax_load_more_photos', 'load_more_photos');
 add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos');

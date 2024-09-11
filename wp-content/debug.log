@@ -16417,3 +16417,2073 @@
 [11-Sep-2024 07:04:53 UTC] Loading page: 2
 [11-Sep-2024 07:04:53 UTC] Photos loaded: 16
 [11-Sep-2024 07:04:53 UTC] Photos loaded: 16
+[11-Sep-2024 10:21:07 UTC] Catégorie: reception
+[11-Sep-2024 10:21:07 UTC] Format: null
+[11-Sep-2024 10:21:07 UTC] Tri: null
+[11-Sep-2024 10:21:07 UTC] Catégorie: reception
+[11-Sep-2024 10:21:07 UTC] Format: null
+[11-Sep-2024 10:21:07 UTC] Tri: null
+[11-Sep-2024 10:21:58 UTC] Catégorie: mariage
+[11-Sep-2024 10:21:58 UTC] Catégorie: mariage
+[11-Sep-2024 10:21:58 UTC] Format: null
+[11-Sep-2024 10:21:58 UTC] Format: null
+[11-Sep-2024 10:21:58 UTC] Tri: null
+[11-Sep-2024 10:21:58 UTC] Tri: null
+[11-Sep-2024 10:24:41 UTC] Catégorie: mariage
+[11-Sep-2024 10:24:41 UTC] Format: null
+[11-Sep-2024 10:24:41 UTC] Catégorie: mariage
+[11-Sep-2024 10:24:41 UTC] Tri: null
+[11-Sep-2024 10:24:41 UTC] Format: null
+[11-Sep-2024 10:24:41 UTC] Tri: null
+[11-Sep-2024 10:29:47 UTC] Catégorie: reception
+[11-Sep-2024 10:29:47 UTC] Format: null
+[11-Sep-2024 10:29:47 UTC] Catégorie: reception
+[11-Sep-2024 10:29:47 UTC] Tri: null
+[11-Sep-2024 10:29:47 UTC] Format: null
+[11-Sep-2024 10:29:47 UTC] Tri: null
+[11-Sep-2024 10:29:47 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:47 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:47 UTC] Catégorie: reception
+[11-Sep-2024 10:29:47 UTC] Format: null
+[11-Sep-2024 10:29:47 UTC] Tri: null
+[11-Sep-2024 10:29:47 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:47 UTC] Aucun post trouvé.
+[11-Sep-2024 10:29:47 UTC] Aucun post trouvé.
+[11-Sep-2024 10:29:47 UTC] Aucun post trouvé.
+[11-Sep-2024 10:29:57 UTC] Catégorie: television
+[11-Sep-2024 10:29:57 UTC] Format: null
+[11-Sep-2024 10:29:57 UTC] Tri: null
+[11-Sep-2024 10:29:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:29:57 UTC] Catégorie: television
+[11-Sep-2024 10:29:57 UTC] Format: null
+[11-Sep-2024 10:29:57 UTC] Tri: null
+[11-Sep-2024 10:29:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:57 UTC] Catégorie: television
+[11-Sep-2024 10:29:57 UTC] Format: null
+[11-Sep-2024 10:29:57 UTC] Tri: null
+[11-Sep-2024 10:29:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:29:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:29:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:01 UTC] Catégorie: null
+[11-Sep-2024 10:30:01 UTC] Format: paysage
+[11-Sep-2024 10:30:01 UTC] Tri: null
+[11-Sep-2024 10:30:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => paysage
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:01 UTC] Catégorie: null
+[11-Sep-2024 10:30:01 UTC] Format: paysage
+[11-Sep-2024 10:30:01 UTC] Tri: null
+[11-Sep-2024 10:30:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => paysage
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:01 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:01 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:01 UTC] Catégorie: null
+[11-Sep-2024 10:30:01 UTC] Format: paysage
+[11-Sep-2024 10:30:01 UTC] Tri: null
+[11-Sep-2024 10:30:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => paysage
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:01 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:12 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:12 UTC] Format: null
+[11-Sep-2024 10:30:12 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:12 UTC] Tri: null
+[11-Sep-2024 10:30:12 UTC] Format: null
+[11-Sep-2024 10:30:12 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:12 UTC] Tri: null
+[11-Sep-2024 10:30:12 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:12 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:12 UTC] Format: null
+[11-Sep-2024 10:30:12 UTC] Tri: null
+[11-Sep-2024 10:30:12 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:12 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:12 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:12 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:36 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:36 UTC] Format: null
+[11-Sep-2024 10:30:36 UTC] Tri: null
+[11-Sep-2024 10:30:36 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:36 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:36 UTC] Format: null
+[11-Sep-2024 10:30:36 UTC] Tri: null
+[11-Sep-2024 10:30:36 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:36 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:36 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:36 UTC] Catégorie: mariage
+[11-Sep-2024 10:30:36 UTC] Format: null
+[11-Sep-2024 10:30:36 UTC] Tri: null
+[11-Sep-2024 10:30:36 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:36 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:53 UTC] Catégorie: reception
+[11-Sep-2024 10:30:53 UTC] Format: null
+[11-Sep-2024 10:30:53 UTC] Tri: null
+[11-Sep-2024 10:30:53 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:53 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:54 UTC] Catégorie: reception
+[11-Sep-2024 10:30:54 UTC] Format: null
+[11-Sep-2024 10:30:54 UTC] Tri: null
+[11-Sep-2024 10:30:54 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:54 UTC] Aucun post trouvé.
+[11-Sep-2024 10:30:54 UTC] Catégorie: reception
+[11-Sep-2024 10:30:54 UTC] Format: null
+[11-Sep-2024 10:30:54 UTC] Tri: null
+[11-Sep-2024 10:30:54 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:30:54 UTC] Aucun post trouvé.
+[11-Sep-2024 10:33:55 UTC] Catégorie: mariage
+[11-Sep-2024 10:33:55 UTC] Format: null
+[11-Sep-2024 10:33:55 UTC] Tri: null
+[11-Sep-2024 10:33:55 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:33:55 UTC] Catégorie: mariage
+[11-Sep-2024 10:33:55 UTC] Format: null
+[11-Sep-2024 10:33:55 UTC] Tri: null
+[11-Sep-2024 10:33:55 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:33:55 UTC] Aucun post trouvé.
+[11-Sep-2024 10:33:55 UTC] Aucun post trouvé.
+[11-Sep-2024 10:33:55 UTC] Catégorie: mariage
+[11-Sep-2024 10:33:55 UTC] Format: null
+[11-Sep-2024 10:33:55 UTC] Tri: null
+[11-Sep-2024 10:33:55 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:33:55 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:00 UTC] Catégorie: mariage
+[11-Sep-2024 10:34:00 UTC] Format: null
+[11-Sep-2024 10:34:00 UTC] Tri: null
+[11-Sep-2024 10:34:00 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:00 UTC] Catégorie: mariage
+[11-Sep-2024 10:34:00 UTC] Format: null
+[11-Sep-2024 10:34:00 UTC] Tri: null
+[11-Sep-2024 10:34:00 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:00 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:00 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:00 UTC] Catégorie: mariage
+[11-Sep-2024 10:34:00 UTC] Format: null
+[11-Sep-2024 10:34:00 UTC] Tri: null
+[11-Sep-2024 10:34:00 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:00 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:21 UTC] Catégorie: reception
+[11-Sep-2024 10:34:21 UTC] Format: null
+[11-Sep-2024 10:34:21 UTC] Tri: null
+[11-Sep-2024 10:34:21 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:21 UTC] Catégorie: reception
+[11-Sep-2024 10:34:21 UTC] Format: null
+[11-Sep-2024 10:34:21 UTC] Tri: null
+[11-Sep-2024 10:34:21 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:21 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:21 UTC] Catégorie: reception
+[11-Sep-2024 10:34:21 UTC] Format: null
+[11-Sep-2024 10:34:21 UTC] Tri: null
+[11-Sep-2024 10:34:21 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:34:21 UTC] Aucun post trouvé.
+[11-Sep-2024 10:34:21 UTC] Aucun post trouvé.
+[11-Sep-2024 10:37:57 UTC] Catégorie: television
+[11-Sep-2024 10:37:57 UTC] Format: null
+[11-Sep-2024 10:37:57 UTC] Tri: null
+[11-Sep-2024 10:37:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:37:57 UTC] Catégorie: television
+[11-Sep-2024 10:37:57 UTC] Format: null
+[11-Sep-2024 10:37:57 UTC] Tri: null
+[11-Sep-2024 10:37:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:37:57 UTC] Catégorie: television
+[11-Sep-2024 10:37:57 UTC] Format: null
+[11-Sep-2024 10:37:57 UTC] Tri: null
+[11-Sep-2024 10:37:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+        )
+
+)
+
+[11-Sep-2024 10:37:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:37:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:37:57 UTC] Aucun post trouvé.
+[11-Sep-2024 10:41:53 UTC] Catégorie: mariage
+[11-Sep-2024 10:41:53 UTC] Format: null
+[11-Sep-2024 10:41:53 UTC] Tri: null
+[11-Sep-2024 10:41:53 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:41:53 UTC] Catégorie: mariage
+[11-Sep-2024 10:41:53 UTC] Catégorie: mariage
+[11-Sep-2024 10:41:53 UTC] Format: null
+[11-Sep-2024 10:41:53 UTC] Format: null
+[11-Sep-2024 10:41:53 UTC] Tri: null
+[11-Sep-2024 10:41:53 UTC] Tri: null
+[11-Sep-2024 10:41:53 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:41:53 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:41:53 UTC] Aucun post trouvé.
+[11-Sep-2024 10:41:53 UTC] Aucun post trouvé.
+[11-Sep-2024 10:41:53 UTC] Aucun post trouvé.
+[11-Sep-2024 10:43:56 UTC] Catégorie: mariage
+[11-Sep-2024 10:43:56 UTC] Format: null
+[11-Sep-2024 10:43:56 UTC] Tri: null
+[11-Sep-2024 10:43:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:43:56 UTC] Catégorie: mariage
+[11-Sep-2024 10:43:56 UTC] Aucun post trouvé.
+[11-Sep-2024 10:43:56 UTC] Format: null
+[11-Sep-2024 10:43:56 UTC] Tri: null
+[11-Sep-2024 10:43:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:43:56 UTC] Aucun post trouvé.
+[11-Sep-2024 10:43:56 UTC] Catégorie: mariage
+[11-Sep-2024 10:43:56 UTC] Format: null
+[11-Sep-2024 10:43:56 UTC] Tri: null
+[11-Sep-2024 10:43:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:43:56 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:02 UTC] Catégorie: television
+[11-Sep-2024 10:44:02 UTC] Format: null
+[11-Sep-2024 10:44:02 UTC] Tri: null
+[11-Sep-2024 10:44:02 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:02 UTC] Catégorie: television
+[11-Sep-2024 10:44:02 UTC] Format: null
+[11-Sep-2024 10:44:02 UTC] Tri: null
+[11-Sep-2024 10:44:02 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:02 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:02 UTC] Catégorie: television
+[11-Sep-2024 10:44:02 UTC] Format: null
+[11-Sep-2024 10:44:02 UTC] Tri: null
+[11-Sep-2024 10:44:02 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:02 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:02 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:13 UTC] Catégorie: reception
+[11-Sep-2024 10:44:13 UTC] Format: null
+[11-Sep-2024 10:44:13 UTC] Tri: null
+[11-Sep-2024 10:44:13 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:13 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:13 UTC] Catégorie: reception
+[11-Sep-2024 10:44:13 UTC] Format: null
+[11-Sep-2024 10:44:13 UTC] Tri: null
+[11-Sep-2024 10:44:13 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:13 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:13 UTC] Catégorie: reception
+[11-Sep-2024 10:44:13 UTC] Format: null
+[11-Sep-2024 10:44:13 UTC] Tri: null
+[11-Sep-2024 10:44:13 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:13 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:32 UTC] Catégorie: reception
+[11-Sep-2024 10:44:32 UTC] Format: null
+[11-Sep-2024 10:44:32 UTC] Tri: null
+[11-Sep-2024 10:44:32 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:32 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:32 UTC] Catégorie: reception
+[11-Sep-2024 10:44:32 UTC] Format: null
+[11-Sep-2024 10:44:32 UTC] Tri: null
+[11-Sep-2024 10:44:32 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:32 UTC] Aucun post trouvé.
+[11-Sep-2024 10:44:32 UTC] Catégorie: reception
+[11-Sep-2024 10:44:32 UTC] Format: null
+[11-Sep-2024 10:44:32 UTC] Tri: null
+[11-Sep-2024 10:44:32 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:44:32 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:34 UTC] Catégorie: mariage
+[11-Sep-2024 10:56:34 UTC] Format: null
+[11-Sep-2024 10:56:34 UTC] Tri: null
+[11-Sep-2024 10:56:34 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:34 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:34 UTC] Catégorie: mariage
+[11-Sep-2024 10:56:34 UTC] Format: null
+[11-Sep-2024 10:56:34 UTC] Tri: null
+[11-Sep-2024 10:56:34 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:34 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:34 UTC] Catégorie: mariage
+[11-Sep-2024 10:56:34 UTC] Format: null
+[11-Sep-2024 10:56:34 UTC] Tri: null
+[11-Sep-2024 10:56:34 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:34 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:46 UTC] Catégorie: reception
+[11-Sep-2024 10:56:46 UTC] Format: null
+[11-Sep-2024 10:56:46 UTC] Tri: null
+[11-Sep-2024 10:56:46 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:46 UTC] Catégorie: reception
+[11-Sep-2024 10:56:46 UTC] Format: null
+[11-Sep-2024 10:56:46 UTC] Tri: null
+[11-Sep-2024 10:56:46 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:46 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:46 UTC] Aucun post trouvé.
+[11-Sep-2024 10:56:46 UTC] Catégorie: reception
+[11-Sep-2024 10:56:46 UTC] Format: null
+[11-Sep-2024 10:56:46 UTC] Tri: null
+[11-Sep-2024 10:56:46 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 10:56:46 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:01 UTC] Catégorie: mariage
+[11-Sep-2024 11:05:01 UTC] Format: null
+[11-Sep-2024 11:05:01 UTC] Tri: null
+[11-Sep-2024 11:05:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:01 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:01 UTC] Catégorie: mariage
+[11-Sep-2024 11:05:01 UTC] Format: null
+[11-Sep-2024 11:05:01 UTC] Tri: null
+[11-Sep-2024 11:05:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:01 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:01 UTC] Catégorie: mariage
+[11-Sep-2024 11:05:01 UTC] Format: null
+[11-Sep-2024 11:05:01 UTC] Tri: null
+[11-Sep-2024 11:05:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:01 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:12 UTC] Loading page: 2
+[11-Sep-2024 11:05:12 UTC] Loading page: 2
+[11-Sep-2024 11:05:12 UTC] Loading page: 2
+[11-Sep-2024 11:05:12 UTC] Photos loaded: 16
+[11-Sep-2024 11:05:12 UTC] Photos loaded: 16
+[11-Sep-2024 11:05:12 UTC] Photos loaded: 16
+[11-Sep-2024 11:05:57 UTC] Catégorie: reception
+[11-Sep-2024 11:05:57 UTC] Format: null
+[11-Sep-2024 11:05:57 UTC] Tri: null
+[11-Sep-2024 11:05:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:57 UTC] Catégorie: reception
+[11-Sep-2024 11:05:57 UTC] Format: null
+[11-Sep-2024 11:05:57 UTC] Tri: null
+[11-Sep-2024 11:05:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:57 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:57 UTC] Catégorie: reception
+[11-Sep-2024 11:05:57 UTC] Format: null
+[11-Sep-2024 11:05:57 UTC] Tri: null
+[11-Sep-2024 11:05:57 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:05:57 UTC] Aucun post trouvé.
+[11-Sep-2024 11:05:57 UTC] Aucun post trouvé.
+[11-Sep-2024 11:08:56 UTC] Catégorie: reception
+[11-Sep-2024 11:08:56 UTC] Format: null
+[11-Sep-2024 11:08:56 UTC] Tri: null
+[11-Sep-2024 11:08:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:08:56 UTC] Catégorie: reception
+[11-Sep-2024 11:08:56 UTC] Format: null
+[11-Sep-2024 11:08:56 UTC] Tri: null
+[11-Sep-2024 11:08:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:08:56 UTC] Aucun post trouvé.
+[11-Sep-2024 11:08:56 UTC] Aucun post trouvé.
+[11-Sep-2024 11:08:56 UTC] Catégorie: reception
+[11-Sep-2024 11:08:56 UTC] Format: null
+[11-Sep-2024 11:08:56 UTC] Tri: null
+[11-Sep-2024 11:08:56 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => reception
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:08:56 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:16 UTC] Catégorie: mariage
+[11-Sep-2024 11:09:16 UTC] Format: null
+[11-Sep-2024 11:09:16 UTC] Tri: null
+[11-Sep-2024 11:09:16 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:16 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:17 UTC] Catégorie: mariage
+[11-Sep-2024 11:09:17 UTC] Format: null
+[11-Sep-2024 11:09:17 UTC] Tri: null
+[11-Sep-2024 11:09:17 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:17 UTC] Catégorie: mariage
+[11-Sep-2024 11:09:17 UTC] Format: null
+[11-Sep-2024 11:09:17 UTC] Tri: null
+[11-Sep-2024 11:09:17 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:17 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:17 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:28 UTC] Catégorie: television
+[11-Sep-2024 11:09:28 UTC] Catégorie: television
+[11-Sep-2024 11:09:28 UTC] Format: null
+[11-Sep-2024 11:09:28 UTC] Format: null
+[11-Sep-2024 11:09:28 UTC] Tri: null
+[11-Sep-2024 11:09:28 UTC] Tri: null
+[11-Sep-2024 11:09:28 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:28 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:28 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:28 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:28 UTC] Catégorie: television
+[11-Sep-2024 11:09:28 UTC] Format: null
+[11-Sep-2024 11:09:28 UTC] Tri: null
+[11-Sep-2024 11:09:28 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => television
+                )
+
+            [1] => Array
+                (
+                    [taxonomy] => format
+                    [field] => slug
+                    [terms] => null
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:09:28 UTC] Aucun post trouvé.
+[11-Sep-2024 11:09:49 UTC] Loading page: 2
+[11-Sep-2024 11:09:49 UTC] Loading page: 2
+[11-Sep-2024 11:09:49 UTC] Loading page: 2
+[11-Sep-2024 11:09:49 UTC] Photos loaded: 16
+[11-Sep-2024 11:09:49 UTC] Photos loaded: 16
+[11-Sep-2024 11:09:49 UTC] Photos loaded: 16
+[11-Sep-2024 11:25:37 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:25:37 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:25:37 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:25:56 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:25:56 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:25:56 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:33:06 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:33:06 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:33:06 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:34:30 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:36:00 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:36:00 UTC] Nonce vérification échouée.
+[11-Sep-2024 11:44:44 UTC] Catégorie: mariage
+[11-Sep-2024 11:44:44 UTC] Format: 
+[11-Sep-2024 11:44:44 UTC] Tri: 
+[11-Sep-2024 11:44:44 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:44:44 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 11:44:49 UTC] Catégorie: mariage
+[11-Sep-2024 11:44:49 UTC] Format: 
+[11-Sep-2024 11:44:49 UTC] Tri: 
+[11-Sep-2024 11:44:49 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:44:49 UTC] Catégorie: mariage
+[11-Sep-2024 11:44:49 UTC] Format: 
+[11-Sep-2024 11:44:49 UTC] Tri: 
+[11-Sep-2024 11:44:49 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:44:49 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 11:44:49 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 11:45:01 UTC] Catégorie: mariage
+[11-Sep-2024 11:45:01 UTC] Format: 
+[11-Sep-2024 11:45:01 UTC] Tri: 
+[11-Sep-2024 11:45:01 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:45:02 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 11:45:04 UTC] Catégorie: mariage
+[11-Sep-2024 11:45:04 UTC] Format: 
+[11-Sep-2024 11:45:04 UTC] Tri: 
+[11-Sep-2024 11:45:04 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:45:05 UTC] Catégorie: mariage
+[11-Sep-2024 11:45:05 UTC] Format: 
+[11-Sep-2024 11:45:05 UTC] Tri: 
+[11-Sep-2024 11:45:05 UTC] Arguments de la requête: Array
+(
+    [post_type] => photos
+    [posts_per_page] => -1
+    [tax_query] => Array
+        (
+            [0] => Array
+                (
+                    [taxonomy] => categorie
+                    [field] => slug
+                    [terms] => mariage
+                )
+
+            [relation] => AND
+        )
+
+)
+
+[11-Sep-2024 11:45:05 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 11:45:05 UTC] Nombre de posts trouvés: 9
+[11-Sep-2024 12:15:44 UTC] Loading page: 2
+[11-Sep-2024 12:15:44 UTC] Photos loaded: 16
+[11-Sep-2024 12:15:44 UTC] Loading page: 2
+[11-Sep-2024 12:15:44 UTC] Loading page: 2
+[11-Sep-2024 12:15:44 UTC] Photos loaded: 16
+[11-Sep-2024 12:15:44 UTC] Photos loaded: 16
+[11-Sep-2024 12:30:35 UTC] Loading page: 2
+[11-Sep-2024 12:30:35 UTC] Loading page: 2
+[11-Sep-2024 12:30:35 UTC] Loading page: 2
+[11-Sep-2024 12:30:35 UTC] Photos loaded: 16
+[11-Sep-2024 12:30:35 UTC] Photos loaded: 16
+[11-Sep-2024 12:30:35 UTC] Photos loaded: 16
