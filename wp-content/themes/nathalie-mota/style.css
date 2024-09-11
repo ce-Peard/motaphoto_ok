@@ -1351,6 +1351,7 @@ textarea {
   display: block;
 }
 
+
 /*********************************/
 /*********RELATED PHOTOS**********/
 /*********************************/
@@ -1403,32 +1404,11 @@ textarea {
   opacity: 1;
 }
 
-/*********************************/
-/*********GRID PHOTO GALLERY**********/
-/*********************************/
 
-.photo-gallery {
-  display: flex;
-  position: relative;
-  z-index: 1;
-  height: auto; /* ou simplement ne pas définir de hauteur */
-  margin: auto;
-}
 
-.grid-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  grid-gap: 20px; 
-  width: 1148px;
-  height: 2040px;
-}
-
-.photo-gallery.two-columns {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
-}
-
+/****************************/
+/*********HOME PAGE**********/
+/****************************/
 
 /*********BANNER*********/
 
@@ -1468,6 +1448,71 @@ textarea {
   z-index: 20;
   padding: 0 20px;
 }
+
+/*********MENUS DEROULANTS*********/
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 1148px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filter-uppercase {
+  text-transform: uppercase;
+}
+
+.filter-uppercase option {
+  text-transform: capitalize;
+}
+
+.filter-container1 {
+  display: flex;
+  gap: 20px;
+}
+
+#menu1-categories, #menu2-formats, #menu3-tri {
+  padding: 10px;
+  width: 260px;
+  height: auto;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+}
+/*********************************/
+/*********GRID PHOTO GALLERY**********/
+/*********************************/
+
+.photo-gallery {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  height: auto; /* ou simplement ne pas définir de hauteur */
+  margin: auto;
+}
+
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 20px; 
+  width: 1148px;
+  height: 2040px;
+}
+
+.photo-gallery.two-columns {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
 
 /*********MOTA BUTTON STYLE**********/
 

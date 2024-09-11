@@ -35,7 +35,31 @@ get_header();
 </section>
 
 <main id="primary" class="site-main">
-
+	<section class="filter-container">
+		<div class="filter-container1">
+			<!-- Premier menu déroulant -->
+			<select name="categories" id="menu1-categories" aria-label="Catégories" class="filter-uppercase">
+				<option value="" disabled selected hidden>Catégories</option>
+				<option value="reception">Réception</option>
+				<option value="television">Télévision</option>
+				<option value="concert">Concert</option>
+				<option value="mariage">Mariage</option>
+			</select>
+			<!-- Deuxième menu déroulant -->
+			<select name="formats" id="menu2-formats" aria-label="Formats" class="filter-uppercase">
+				<option value="" disabled selected hidden>Formats</option>
+				<option value="paysage">Paysage</option>
+				<option value="portrait">Portrait</option>
+			</select>
+		</div>
+		<div class="filter-container2">
+			<select name="tri" id="menu3-tri" aria-label="Trier par" class="filter-uppercase">
+				<option value="" disabled selected hidden>Trier par</option>
+				<option value="date_desc">Photos les plus récentes</option>
+				<option value="date_asc">Photos les plus anciennes</option>
+			</select>
+		</div>
+	</section>
 	<section class="photo-gallery grid-gallery two-columns">
 		<?php
 		$args = array(
