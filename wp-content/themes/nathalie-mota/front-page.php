@@ -40,19 +40,36 @@ get_header();
 			<!-- Premier menu déroulant -->
 			<select name="categories" id="menu1-categories" aria-label="Catégories" class="filter-uppercase">
 				<option value="" disabled selected hidden>Catégories</option>
-				<option value="reception">Réception</option>
-				<option value="television">Télévision</option>
-				<option value="concert">Concert</option>
-				<option value="mariage">Mariage</option>
+				<?php
+				$categories = get_terms(array(
+					'taxonomy' => 'categorie',
+					'hide_empty' => false,
+				));
+				if (!empty($categories) && !is_wp_error($categories)) {
+					foreach ($categories as $category) {
+						echo '<option value="' . esc_attr($category->slug) . '">' . esc_html($category->name) . '</option>';
+					}
+				}
+				?>
 			</select>
 			<!-- Deuxième menu déroulant -->
 			<select name="formats" id="menu2-formats" aria-label="Formats" class="filter-uppercase">
 				<option value="" disabled selected hidden>Formats</option>
-				<option value="paysage">Paysage</option>
-				<option value="portrait">Portrait</option>
+				<?php
+				$formats = get_terms(array(
+					'taxonomy' => 'format', // Remplacez par la taxonomie appropriée
+					'hide_empty' => false,
+				));
+				if (!empty($formats) && !is_wp_error($formats)) {
+					foreach ($formats as $format) {
+						echo '<option value="' . esc_attr($format->slug) . '">' . esc_html($format->name) . '</option>';
+					}
+				}
+				?>
 			</select>
 		</div>
 		<div class="filter-container2">
+			<!-- Troisième menu déroulant -->
 			<select name="tri" id="menu3-tri" aria-label="Trier par" class="filter-uppercase">
 				<option value="" disabled selected hidden>Trier par</option>
 				<option value="date_desc">Photos les plus récentes</option>
