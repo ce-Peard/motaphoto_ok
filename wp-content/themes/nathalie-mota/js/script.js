@@ -60,7 +60,8 @@ window.onclick = function(event) {
         nonce: nonce
       };
 
-    
+      console.log("Données envoyées via AJAX:", data);
+
       $.ajax({
         url: ajaxurl,
         type: "post",
@@ -68,12 +69,14 @@ window.onclick = function(event) {
         data: data,
         success: function (response) {
           // Mettre à jour le contenu de la galerie avec les nouveaux résultats
-          console.log(response);
+          console.log("Réponse AJAX:", response);
 
           const gallery = $(".photo-gallery");
           gallery.html(response);
         },
-        error: function (xhr, status, error) {},
+        error: function (xhr, status, error) {
+          console.error("Erreur AJAX:", status, error);
+        },
       });
     }
 
