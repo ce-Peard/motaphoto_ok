@@ -74,9 +74,7 @@ window.onclick = function(event) {
           const gallery = $(".photo-gallery");
           gallery.html(response);
         },
-        error: function (xhr, status, error) {
-          console.error("Erreur AJAX:", status, error);
-        },
+        error: function (xhr, status, error) {},
       });
     }
 
@@ -129,13 +127,9 @@ window.onclick = function(event) {
             currentPage++;
             photoGallery.append(response.data.html);
             
-            if (!response.data.has_more) {
-              loadMoreButton.text('Plus de photos').prop('disabled', true);
-            } else {
-              loadMoreButton.text('Charger plus').prop('disabled', false);
-            }
+            loadMoreButton.text('Charger plus').prop('disabled', !response.data.has_more);
           } else {
-            loadMoreButton.text('Plus de photos').prop('disabled', true);
+            loadMoreButton.text('Charger plus').prop('disabled', true);
           }
         },
         error: function(xhr, status, error) {
