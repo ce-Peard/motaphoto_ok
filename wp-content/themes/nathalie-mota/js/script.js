@@ -84,63 +84,68 @@ window.onclick = function(event) {
   });
 })(jQuery);
 
-/*******************************************/
-/*********APPEL AJAX GRID GALLERY***********/
-/*******************************************/
+/****************************************************/
+/*********APPEL AJAX PHOTOS SUPPLEMENTAIRES**********/
+/****************************************************/
 
 
 (function ($) {
   $(document).ready(function () {
-    var currentPage = 1; // Assurez-vous que cela commence à 1
-    var loading = false;
-    
-    $("#load-more-photos").on("click", function () {
-      if (loading) return;
+    // ... code existant pour les filtres ...
+
+    let currentPage = 1;
+    let isLoading = false;
+    const loadMoreButton = $('#load-more-photos');
+    const photoGallery = $('.photo-gallery');
+    const ajaxurl = $('#ajaxurl').val();
+    const nonce = loadMoreButton.data('nonce');
+
+    function loadMorePhotos() {
+      if (isLoading) return;
       
-      var button = $(this);
-      loading = true;
-      
-      var data = {
-        action: button.data("action"),
-        nonce: button.data("nonce"),
-        page: currentPage + 1, // Cela doit être correct
+      isLoading = true;
+      console.log('Loading more photos...'); // Log pour vérifier l'appel
+      loadMoreButton.prop('disabled', true); // Désactiver le bouton immédiatement
+
+      const data = {
+        action: 'plus_photos',
+        nonce: nonce,
+        page: currentPage + 1
       };
 
       $.ajax({
-        url: button.data("ajaxurl"),
-        type: "post",
+        url: ajaxurl,
+        type: 'post',
+        dataType: 'json',
         data: data,
-        beforeSend: function () {
-          button.text("Chargement...");
+        beforeSend: function() {
+          loadMoreButton.text('Chargement...').prop('disabled', true);
         },
-        success: function (response) {
-          console.log("AJAX response:", response); // Log de la réponse AJAX
-          debugger; // Arrête l'exécution ici pour déboguer
-
+        success: function(response) {
           if (response.success && response.data.html) {
-            console.log("Avant ajout, contenu de la galerie :", $(".photo-gallery").html()); // Log avant ajout
             currentPage++;
-            $(".photo-gallery").append(response.data.html);
-            console.log("Après ajout, contenu de la galerie :", $(".photo-gallery").html()); // Log après ajout
+            photoGallery.append(response.data.html);
+            
             if (!response.data.has_more) {
-              button.text("Plus de photos");
-              button.prop("disabled", true);
+              loadMoreButton.text('Plus de photos').prop('disabled', true);
             } else {
-              button.text("Charger plus");
+              loadMoreButton.text('Charger plus').prop('disabled', false);
             }
           } else {
-            button.text("Plus de photos");
-            button.prop("disabled", true);
+            loadMoreButton.text('Plus de photos').prop('disabled', true);
           }
         },
-        error: function (xhr, status, error) {
-          console.error("AJAX error:", status, error);
-          button.text("Erreur de chargement");
+        error: function(xhr, status, error) {
+          console.error('Erreur AJAX:', status, error);
+          loadMoreButton.text('Erreur de chargement').prop('disabled', false);
         },
-        complete: function () {
-          loading = false;
+        complete: function() {
+          isLoading = false;
         }
       });
-    });
+    }
+
+    loadMoreButton.off('click').on('click', loadMorePhotos); // Assurez-vous que l'événement est attaché une seule fois
+
   });
 })(jQuery);

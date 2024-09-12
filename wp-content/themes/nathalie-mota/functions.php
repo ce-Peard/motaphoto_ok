@@ -301,61 +301,101 @@ add_action('wp_ajax_nopriv_filter_images', 'filter_images');
 /*********CHARGER LE SCRIPT NATALIEMOTA***********/
 /*************************************************/
 
-function nathaliemota_assets()
-{
-	// Charger le script principal
-	wp_enqueue_script(
-		'nathaliemota_script', // Handle unique pour le script
-		get_template_directory_uri() . '/js/script.js', // Chemin vers le fichier script.js
-		array('jquery'), // Dépendances (ici jQuery)
-		'1.0', // Version du script
-		true // Charger dans le footer
-	);
+function plus_photos() {
+    check_ajax_referer('load_more_photos', 'nonce');
+
+    $paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
+    $posts_per_page = 8;
+
+    $args = array(
+        'post_type' => 'photos',
+        'posts_per_page' => $posts_per_page,
+        'paged' => $paged,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+
+    $query = new WP_Query($args);
+    $response = array();
+
+    if ($query->have_posts()) {
+        ob_start();
+        while ($query->have_posts()) {
+            $query->the_post();
+            get_template_part('template-parts/photo-block-ajax');
+        }
+        $photos_html = ob_get_clean();
+        $response['html'] = $photos_html;
+        $response['has_more'] = $query->max_num_pages > $paged;
+        wp_send_json_success($response);
+    } else {
+        wp_send_json_error('Aucune photo supplémentaire');
+    }
+
+    wp_reset_postdata();
+    wp_die();
 }
-add_action('wp_enqueue_scripts', 'nathaliemota_assets');
+add_action('wp_ajax_plus_photos', 'plus_photos');
+add_action('wp_ajax_nopriv_plus_photos', 'plus_photos');
 
-/****************************************************/
-/*********CHARGER PLUS DE PHOTOS AVEC AJAX***********/
-/****************************************************/
 
-function load_more_photos()
-{
-	check_ajax_referer('load_more_photos', 'nonce');
 
-	$paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
-	$posts_per_page = 8;
 
-	$args = array(
-		'post_type' => 'photos',
-		'posts_per_page' => $posts_per_page,
-		'paged' => $paged,
-		'order' => 'DESC',
-		'orderby' => 'date',
-	);
 
-	error_log("Loading page: " . $paged); // Ajoutez ce log
 
-	$query = new WP_Query($args);
-	$response = array();
 
-	if ($query->have_posts()) {
-		ob_start();
-		while ($query->have_posts()) {
-			$query->the_post();
-			get_template_part('template-parts/photo-block-ajax');
-		}
-		$photos_html = ob_get_clean();
-		$response['html'] = $photos_html;
-		$response['has_more'] = $query->max_num_pages > $paged; // Cela doit être correct
-		error_log("Photos loaded: " . $query->found_posts); // Ajoutez ce log
-		wp_send_json_success($response);
-	} else {
-		error_log("No photos found for page " . $paged);
-		wp_send_json_error('No more photos');
-	}
 
-	wp_reset_postdata();
-	wp_die();
-}
-add_action('wp_ajax_load_more_photos', 'load_more_photos');
-add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos');
+// function nathaliemota_assets()
+// {
+// 	// Charger le script principal
+// 	wp_enqueue_script(
+// 		'nathaliemota_script', // Handle unique pour le script
+// 		get_template_directory_uri() . '/js/script.js', // Chemin vers le fichier script.js
+// 		array('jquery'), // Dépendances (ici jQuery)
+// 		'1.0', // Version du script
+// 		true // Charger dans le footer
+// 	);
+// }
+// add_action('wp_enqueue_scripts', 'nathaliemota_assets');
+
+// /****************************************************/
+// /*********CHARGER PLUS DE PHOTOS AVEC AJAX***********/
+// /****************************************************/
+
+// function load_more_photos()
+// {
+// 	check_ajax_referer('load_more_photos', 'nonce');
+
+// 	$paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
+// 	$posts_per_page = 8;
+
+// 	$args = array(
+// 		'post_type' => 'photos',
+// 		'posts_per_page' => $posts_per_page,
+// 		'paged' => $paged,
+// 		'order' => 'DESC',
+// 		'orderby' => 'date',
+// 	);
+
+// 	$query = new WP_Query($args);
+// 	$response = array();
+
+// 	if ($query->have_posts()) {
+// 		ob_start();
+// 		while ($query->have_posts()) {
+// 			$query->the_post();
+// 			get_template_part('template-parts/photo-block-ajax');
+// 		}
+// 		$photos_html = ob_get_clean();
+// 		$response['html'] = $photos_html;
+// 		$response['has_more'] = $query->max_num_pages > $paged; // Cela doit être correct
+// 		wp_send_json_success($response);
+// 	} else {
+// 		wp_send_json_error('No more photos');
+// 	}
+
+// 	wp_reset_postdata();
+// 	wp_die();
+// }
+// add_action('wp_ajax_load_more_photos', 'load_more_photos');
+// add_action('wp_ajax_nopriv_load_more_photos', 'load_more_photos');
