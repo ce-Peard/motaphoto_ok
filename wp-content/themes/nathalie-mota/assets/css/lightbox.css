@@ -1,0 +1,104 @@
+/*************************************/
+/*********LIGHTBOX**********/
+/*************************************/
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .90);
+    z-index: 1000;
+} 
+
+.lightbox__next, .lightbox__prev {
+    border: none;
+    background: url(../images/arrow.svg) center center / 25px 18px no-repeat;
+    width: 92px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    margin-top: -14px;
+    z-index: 1010;
+    cursor: pointer;
+    /* opacity: .5; */
+}
+
+.lightbox__next {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    right: 0;
+    left: auto;
+    padding-right: 40px; /* Ajustez la valeur selon la taille du SVG */
+    background-position: right center; /* Positionner le SVG à droite */
+}
+
+.lightbox__next::before {
+    content: 'Suivante';
+    color: #ffffff !important;
+    margin-right: 8px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.lightbox__next::before:hover {
+    font-weight: 700;  
+}
+
+.lightbox__prev {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    right: auto;
+    left: 0;
+    padding-left: 40px; /* Ajustez la valeur selon la taille du SVG */
+    position: relative; /* Nécessaire pour positionner le pseudo-élément */
+    background: none; /* Supprimer l'image de fond */
+}
+
+.lightbox__prev::before {
+    content: 'Précédente'; /* Remplacez 'Texte' par le texte souhaité */
+    color: #ffffff !important; /* Forcer le changement de la couleur du texte */
+    margin-right: 8px; /* Ajustez la marge selon vos besoins */
+}
+
+.lightbox__prev::before:hover {
+    font-weight: 700;  
+}
+
+.lightbox__prev::after {
+    content: '';
+    background: url(../images/arrow.svg) center center / 25px 18px no-repeat;
+    width: 25px; /* Largeur du SVG */
+    height: 18px; /* Hauteur du SVG */
+    position: absolute;
+    left: 8px; /* Ajustez la valeur pour positionner correctement le SVG */
+    transform: rotate(180deg); /* Appliquer la rotation uniquement au SVG */
+}
+
+.lightbox__prev:hover::after {
+    background: url(../images/arrow.svg) center center / 34px 18px no-repeat;
+}
+
+.lightbox__next:hover, .lightbox__prev:hover {
+    background: url(../images/arrow.svg) center center / 34px 18px no-repeat;
+}
+
+/* .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .lightbox-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .lightbox-content img {
+    max-width: 90%;
+    max-height: 90%;
+  } */

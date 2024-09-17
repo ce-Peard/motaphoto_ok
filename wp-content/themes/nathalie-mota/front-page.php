@@ -82,6 +82,7 @@ get_header();
 			</select>
 		</div>
 	</section>
+	<!-- Photo Gallery -->
 	<section class="photo-gallery grid-gallery two-columns">
 		<?php
 		$args = array(
@@ -94,6 +95,7 @@ get_header();
 		get_template_part('template-parts/photo-block');
 		?>
 	</section>
+	<!-- Load More -->
 	<div class="load-more-container">
 		<button
 			id="load-more-photos"
@@ -103,9 +105,19 @@ get_header();
 			data-action="load_more_photos"
 			data-ajaxurl="<?php echo admin_url('admin-ajax.php'); ?>"
 		>Charger plus</button>
-		
 	</div>
 </main>
+
+<!-- Lightbox HTML -->
+<!-- <div class="lightbox" style="display: none;"> -->
+<div class="lightbox">
+  <button class="lightbox__close">Fermer</button>
+  <button class="lightbox__next">Suivant</button>
+  <button class="lightbox__prev">Précédent</button>
+  <div class="lightbox__container">
+    <img src="" alt="">
+  </div>
+</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
