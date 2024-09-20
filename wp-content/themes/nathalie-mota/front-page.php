@@ -115,7 +115,7 @@ get_header();
   <button class="lightbox__next">Suivant</button>
   <button class="lightbox__prev">Précédent</button>
   <div class="lightbox__container">
-    <img src="" alt="">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nathalie-10.jpeg" alt="Image">
   </div>
 </div>
 
