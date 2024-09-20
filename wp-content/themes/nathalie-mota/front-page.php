@@ -109,7 +109,7 @@ get_header();
 </main>
 
 <!-- Lightbox HTML -->
-<!-- <div class="lightbox" style="display: none;"> -->
+<div class="lightbox" style="display: none;">
 <div class="lightbox">
   <button class="lightbox__close">Fermer</button>
   <button class="lightbox__next">Suivant</button>
