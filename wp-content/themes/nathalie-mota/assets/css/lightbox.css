@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
   display: flex; /* Ajouté pour centrer le contenu */
   align-items: center; /* Ajouté pour centrer verticalement */
@@ -36,17 +36,16 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  right: 0;
+  right: 10%;
   left: auto;
   width: 50px; /* Ajuster la largeur pour correspondre à la taille de l'icône */
   background: url(../images/arrow.svg) right center / 25px 18px no-repeat;
-  text-indent: -100px;
 }
 
 .lightbox__next::before {
   content: "Suivante";
   color: #ffffff !important;
-  margin-left: 8px; /* Ajouter une marge à gauche du texte */
+  padding-right: 20px;
 }
 
 .lightbox__next:hover::before {
@@ -60,8 +59,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  right: auto;
-  left: 0;
+  /* right: auto; */
+  left: 10%;
   padding-left: 40px; /* Ajustez la valeur selon la taille du SVG */
   background: none; /* Supprimer l'image de fond */
   /* text-indent: -100px; */
@@ -99,10 +98,10 @@
   height: 50px;
   border: none;
   position: fixed;
+  margin-right: 10%;
+  margin-top: 1%;
   top: 0;
   right: 0;
-  margin: 20px;
-  text-indent: -9999px;
   cursor: pointer;
   z-index: 1020;
 }
@@ -115,8 +114,7 @@
   max-width: 90%; /* Ajouté pour éviter le débordement */
   max-height: 90%; /* Ajouté pour éviter le débordement */
   min-height: 100vh;
-  padding-left: 80px;
-  padding-right: 80px;
+  margin: 22%;
 }
 
 .lightbox__container img {

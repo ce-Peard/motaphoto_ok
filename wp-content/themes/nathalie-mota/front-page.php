@@ -109,15 +109,8 @@ get_header();
 </main>
 
 <!-- Lightbox HTML -->
-<div class="lightbox" style="display: none;">
-<div class="lightbox">
-  <button class="lightbox__close">Fermer</button>
-  <button class="lightbox__next">Suivant</button>
-  <button class="lightbox__prev">Précédent</button>
-  <div class="lightbox__container">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nathalie-10.jpeg" alt="Image">
-  </div>
-</div>
+<!-- <div class="lightbox" style="display: none;"> -->
+
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
