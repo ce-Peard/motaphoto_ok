@@ -36,7 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  right: 10%;
+  right: 3%;
   left: auto;
   width: 50px; /* Ajuster la largeur pour correspondre à la taille de l'icône */
   background: url(../images/arrow.svg) right center / 25px 18px no-repeat;
@@ -60,7 +60,7 @@
   align-items: center;
   justify-content: flex-start;
   /* right: auto; */
-  left: 10%;
+  left: 0.2%;
   padding-left: 40px; /* Ajustez la valeur selon la taille du SVG */
   background: none; /* Supprimer l'image de fond */
   /* text-indent: -100px; */
@@ -98,7 +98,7 @@
   height: 50px;
   border: none;
   position: fixed;
-  margin-right: 10%;
+  margin-right: 4.2%;
   margin-top: 1%;
   top: 0;
   right: 0;
@@ -109,18 +109,12 @@
 /*********CONTAINER**********/
 .lightbox__container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
   max-width: 90%; /* Ajouté pour éviter le débordement */
   max-height: 90%; /* Ajouté pour éviter le débordement */
   min-height: 100vh;
-  margin: 22%;
-}
-
-.lightbox__container img {
-  max-width: 100%;
-  height: auto;
-  animation: lightboxIn 0.5s ease-in-out;
+  margin: 10%;
 }
 
 @keyframes lightboxIn {
@@ -132,11 +126,38 @@
   }
 }
 
+/*********IMAGE**********/
+.lightbox__image {
+  z-index: 1000;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block; /* S'assurer que l'image est un bloc pour éviter les problèmes d'affichage */
+  margin: auto;
+  animation: lightboxIn 0.5s ease-in-out;
+}
 /*********LOADER**********/
 
 .lightbox__loader {
-
   width: 38px;
   height: 38px;
   background: url(../images/loader.svg) center center no-repeat;
+  position: absolute; /* Ajouté pour permettre le centrage */
+  top: 50%; /* Centrer verticalement */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, -50%);
+  z-index: 999
+}
+
+/*********INFO**********/
+.lightbox__info {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block; /* S'assurer que l'image est un bloc pour éviter les problèmes d'affichage */
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px; /* Ajoute un espace au-dessus de l'info */
 }

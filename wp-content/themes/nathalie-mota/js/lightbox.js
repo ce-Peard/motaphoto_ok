@@ -47,13 +47,15 @@ class Lightbox {
 
   loadImage(url) {
     const img = new Image();
-    const container = this.element.querySelector(".lightbox__container");
+    const container = this.element.querySelector(".lightbox__image"); // Nouveau conteneur cible
     const loader = document.createElement("div");
     loader.classList.add("lightbox__loader");
     loader.innerHTML = `<img src="${loaderSvg}" alt="Chargement de l'image">`;
     container.appendChild(loader);
     img.onload = () => {
-      loader.style.display = "none";
+      if (container.contains(loader)) {
+        container.removeChild(loader);
+      }
       container.appendChild(img);
       console.log("Image chargée dans la lightbox.");
     };
@@ -68,11 +70,16 @@ class Lightbox {
   buildDOM(url) {
     const dom = document.createElement("div");
     dom.classList.add("lightbox");
-    dom.innerHTML = `<button class="lightbox__close">Fermer</button>
-        <button class="lightbox__next">Suivant</button>
-        <button class="lightbox__prev">Précédent</button>
+    dom.innerHTML = `<button class="lightbox__close"></button>
+        <button class="lightbox__next"></button>
+        <button class="lightbox__prev"></button>
         <div class="lightbox__container">
             <div class="lightbox__loader"></div>
+            <div class="lightbox__image"></div>
+            <div class="lightbox__info">
+                <div class="lightbox__ref"></div>
+                <div class="lightbox__category"></div>
+            </div>
         </div>`;
     dom
       .querySelector(".lightbox__close")
