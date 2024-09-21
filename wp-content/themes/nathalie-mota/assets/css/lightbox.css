@@ -110,7 +110,6 @@
 .lightbox__container {
   display: flex;
   flex-direction: column; /* Empile les éléments verticalement */
-  align-items: center; /* Centre les éléments horizontalement */
   max-width: 90%; /* Ajouté pour éviter le débordement */
   max-height: 90%; /* Ajouté pour éviter le débordement */
   min-height: 100vh;
@@ -153,11 +152,27 @@
 /*********INFO**********/
 .lightbox__info {
   max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
-  display: block; /* S'assurer que l'image est un bloc pour éviter les problèmes d'affichage */
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 20px; /* Ajoute un espace au-dessus de l'info */
+  display: flex; /* Utiliser Flexbox */
+  justify-content: space-between; /* Distribuer l'espace autour des éléments */
+  align-items: center; /* Aligner les éléments verticalement au centre */
+  padding-bottom: 20px;
+}
+
+.lightbox__ref, .lightbox__category {
+  flex: 1; /* Assurez-vous que les éléments enfants peuvent s'étendre */
+  text-align: center; /* Centrer le texte à l'intérieur des éléments */
+  color: #ffffff;
+  font-family: "SpaceMono", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.lightbox__ref {
+  text-align: left; /* Aligner le texte à gauche */
+} 
+
+.lightbox__category {
+  text-align: right; /* Aligner le texte à droite */
 }

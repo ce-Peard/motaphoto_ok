@@ -1,33 +1,15 @@
 const loaderSvg = 'wp-content/themes/nathalie-mota/assets/Images/loader.svg'; // Définir l'URL de l'image de chargement
 
-// <div class="lightbox">
-//   <button class="lightbox__close"></button>
-//   <button class="lightbox__next"></button>
-//   <button class="lightbox__prev"></button>
-//   <div class="lightbox__container">
-//     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nathalie-10.jpeg" alt="Image">
-//   </div>
-// </div>
-
-
 class Lightbox {
   static init() {
     const links = document.querySelectorAll('.related-photo a');
     links.forEach((link) => {
-      // Ajout d'un écouteur d'événements pour le clic sur le SVG
       const svgLink = link.querySelector('.plein-ecran svg');
       if (svgLink) {
         svgLink.addEventListener("click", (e) => {
-          e.preventDefault(); // Empêche le comportement par défaut du lien
-          console.log("SVG cliqué !");
-          
-          // Récupérer l'URL de l'image d'origine
-          const imgLink = link.querySelector('img').getAttribute('src'); // Récupère l'URL de l'image d'origine
-          console.log("Lien de l'image :", imgLink);
-          
-          // Ouvrir la lightbox avec l'image d'origine
-          const lightboxInstance = new Lightbox(imgLink); // Ouvre la lightbox avec l'image
-          console.log("Instance de Lightbox créée :", lightboxInstance);
+          e.preventDefault();
+          const imgLink = link.querySelector('img').getAttribute('src');
+          new Lightbox(imgLink);
         });
       } else {
         console.error("Aucun SVG trouvé dans le lien.");
@@ -42,12 +24,11 @@ class Lightbox {
     this.element = this.buildDOM(url);
     this.loadImage(url);
     document.body.appendChild(this.element);
-    console.log("Lightbox ajoutée au DOM.");
   }
 
   loadImage(url) {
     const img = new Image();
-    const container = this.element.querySelector(".lightbox__image"); // Nouveau conteneur cible
+    const container = this.element.querySelector(".lightbox__image");
     const loader = document.createElement("div");
     loader.classList.add("lightbox__loader");
     loader.innerHTML = `<img src="${loaderSvg}" alt="Chargement de l'image">`;
@@ -57,13 +38,11 @@ class Lightbox {
         container.removeChild(loader);
       }
       container.appendChild(img);
-      console.log("Image chargée dans la lightbox.");
     };
     img.src = url;
   }
 
   /**
-
    * @param {string} url URL de l'image
    * @return {HTMLElement}
    */
@@ -77,8 +56,8 @@ class Lightbox {
             <div class="lightbox__loader"></div>
             <div class="lightbox__image"></div>
             <div class="lightbox__info">
-                <div class="lightbox__ref"></div>
-                <div class="lightbox__category"></div>
+                <div class="lightbox__ref">Référence</div>
+                <div class="lightbox__category">Catégorie</div>
             </div>
         </div>`;
     dom
@@ -95,7 +74,6 @@ class Lightbox {
 
   close() {
     this.element.remove();
-    console.log("Lightbox fermée.");
   }
 
   next() {
