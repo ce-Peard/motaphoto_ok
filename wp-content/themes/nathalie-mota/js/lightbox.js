@@ -3,13 +3,13 @@ const loaderSvg = 'wp-content/themes/nathalie-mota/assets/Images/loader.svg'; //
 class Lightbox {
   static init() {
     const links = document.querySelectorAll('.related-photo a');
-    links.forEach((link) => {
+    this.images = Array.from(links).map(link => link.querySelector('img').getAttribute('src'));
+    links.forEach((link, index) => {
       const svgLink = link.querySelector('.plein-ecran svg');
       if (svgLink) {
         svgLink.addEventListener("click", (e) => {
           e.preventDefault();
-          const imgLink = link.querySelector('img').getAttribute('src');
-          new Lightbox(imgLink);
+          new Lightbox(this.images, index);
         });
       } else {
         console.error("Aucun SVG trouvé dans le lien.");
@@ -18,12 +18,16 @@ class Lightbox {
   }
 
   /**
-   * @param {string} url URL de l'image
+   * @param {string[]} images URLs des images
+   * @param {number} index Index de l'image actuelle
    */
-  constructor(url) {
-    this.element = this.buildDOM(url);
-    this.loadImage(url);
+  constructor(images, index) {
+    this.images = images;
+    this.index = index;
+    this.element = this.buildDOM(images[index]);
+    this.loadImage(images[index]);
     document.body.appendChild(this.element);
+    Lightbox.instances.push(this); // Stocker l'instance
   }
 
   loadImage(url) {
@@ -60,29 +64,62 @@ class Lightbox {
                 <div class="lightbox__category">Catégorie</div>
             </div>
         </div>`;
-    dom
-      .querySelector(".lightbox__close")
-      .addEventListener("click", this.close.bind(this));
-    dom
-      .querySelector(".lightbox__next")
-      .addEventListener("click", this.next.bind(this));
-    dom
-      .querySelector(".lightbox__prev")
-      .addEventListener("click", this.prev.bind(this));
     return dom;
   }
 
   close() {
     this.element.remove();
+    Lightbox.instances = Lightbox.instances.filter(inst => inst !== this); // Supprimer l'instance
   }
 
   next() {
-    // Logique pour afficher l'image suivante
+    this.index = (this.index + 1) % this.images.length;
+    this.updateImage();
   }
 
   prev() {
-    // Logique pour afficher l'image précédente
+    this.index = (this.index - 1 + this.images.length) % this.images.length;
+    this.updateImage();
+  }
+
+  updateImage() {
+    const container = this.element.querySelector(".lightbox__image");
+    container.innerHTML = '';
+    this.loadImage(this.images[this.index]);
   }
 }
 
+// Utilisation de la délégation d'événements pour gérer les éléments dynamiques
+document.addEventListener('click', function(event) {
+  if (event.target.matches('.lightbox__close')) {
+    const lightbox = event.target.closest('.lightbox');
+    if (lightbox) {
+      const instance = Lightbox.instances.find(inst => inst.element === lightbox);
+      if (instance) {
+        instance.close();
+      }
+    }
+  } else if (event.target.matches('.lightbox__next')) {
+    const lightbox = event.target.closest('.lightbox');
+    if (lightbox) {
+      const instance = Lightbox.instances.find(inst => inst.element === lightbox);
+      if (instance) {
+        instance.next();
+      }
+    }
+  } else if (event.target.matches('.lightbox__prev')) {
+    const lightbox = event.target.closest('.lightbox');
+    if (lightbox) {
+      const instance = Lightbox.instances.find(inst => inst.element === lightbox);
+      if (instance) {
+        instance.prev();
+      }
+    }
+  }
+});
+
+Lightbox.instances = [];
 Lightbox.init();
+document.addEventListener('ajaxComplete', function() {
+  Lightbox.init();
+});

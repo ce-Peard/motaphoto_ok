@@ -24,3 +24,8 @@
         </div>
     </a>
 </div>
+
+<script>
+  // Déclenche l'événement ajaxComplete après le rendu du contenu
+  document.dispatchEvent(new Event('ajaxComplete'));
+</script>
