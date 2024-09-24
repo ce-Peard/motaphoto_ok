@@ -1,0 +1,214 @@
+/*************************************/
+/*********SINGLE PHOTOS PAGE**********/
+/*************************************/
+
+.main-photo-container {
+    max-width: 1148px !important;
+    width: 100% !important; /* Assurez-vous que la largeur est définie */
+    margin: 0 auto !important; /* Centrer le conteneur */
+  }
+  
+  .photo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  .photo-details-container {
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    margin-right: 10px;
+  }
+  
+  .photo-details {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+  }
+  
+  .photo-details p {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400 !important;
+    line-height: 20.73px;
+  }
+  
+  .photo-thumbnail,
+  .photo-details-container {
+    flex: 1;
+  }
+  
+  /*********CONTACT SECTION**********/
+  
+  .photo-contact {
+    display: flex;
+    align-items: center;
+    height: 119px;
+    border-bottom: 1px solid black;
+  }
+  
+  .photo-contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1148px !important;
+    width: 100% !important; /* Assurez-vous que la largeur est définie */
+    margin: 0 auto !important;
+  }
+  
+  .photo-contact-content p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+  }
+  
+  .photo-contact-content,
+  .photo-navigation {
+    flex: 1;
+  }
+  
+  .vous-aimerez-aussi {
+    padding-top: 77px;
+  }
+  
+  /*********PHOTOS NAVIGATION**********/
+
+  .photo-navigation {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 90%;
+    flex-direction: column-reverse;
+  }
+  
+  .nav-link:hover .nav-thumbnail {
+    display: block;
+  }
+  
+  /*********FLECHES NAVIGATION**********/
+
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Espacement entre les flèches */
+  }
+  
+  .nav-link img {
+    display: block;
+  }
+  .thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .nav-thumbnail {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    display: none;
+    z-index: 1000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .nav-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assurez-vous que l'image couvre entièrement le conteneur */
+    object-position: center; /* Centrez l'image dans le conteneur */
+  }
+  
+  .nav-link:hover .nav-thumbnail {
+    display: block; /* Affichez la miniature au survol */
+  }
+   
+  
+  /*********************************/
+  /*********RELATED PHOTOS**********/
+  /*********************************/
+  
+  .photo-related {
+    display: flex;
+    height: 495px;
+    gap: 20px;
+  }
+  
+  .related-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 495px;
+  }
+  
+  .related-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Ajout de l'icône SVG au survol */
+  .related-photo .svg-overlay {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .related-photo .svg-overlay.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  
+  .related-photo .svg-overlay.top-right {
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+  
+  
+  .related-photo:hover .svg-overlay {
+    opacity: 1;
+  }
+  
+  /* Ajout du fond noir transparent au survol */
+  
+  .related-photo:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+
+  @media (max-width: 426px) {
+    /* .photo-gallery .related-photo img {
+      width: 317px;
+      height: 278px;
+    } */
+    .related-photo {
+      height: 278px;
+      width: 317px;
+    }
+  }

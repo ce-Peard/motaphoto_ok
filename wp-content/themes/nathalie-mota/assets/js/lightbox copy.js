@@ -11,8 +11,6 @@ class Lightbox {
           e.preventDefault();
           new Lightbox(this.images, index);
         });
-      } else {
-        console.error("Aucun SVG trouvé dans le lien.");
       }
     });
   }
@@ -60,8 +58,8 @@ class Lightbox {
             <div class="lightbox__loader"></div>
             <div class="lightbox__image"></div>
             <div class="lightbox__info">
-                <div class="lightbox__ref">Référence</div>
-                <div class="lightbox__category">Catégorie</div>
+                <div class="lightbox__ref" data-ref=""></div>
+                <div class="lightbox__category" data-category=""></div>
             </div>
         </div>`;
     return dom;

@@ -1,0 +1,34 @@
+/******************************/
+/*********MENUHEADER***********/
+/******************************/
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 31px 0 31px 0;
+    padding: 0 146px 0 146px;
+  }
+  
+  .site-header a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .site-header a:hover {
+    text-decoration: none;
+    color: #e00000;
+  }
+  .site-header a:visited {
+    text-decoration: none;
+    color: none;
+  }
+  .site-header a:active {
+    text-decoration: none;
+    color: none;
+  }
+  
+  /* espacement entre les liens */
+  #menu-item-16,
+  #menu-item-11 {
+    padding-left: 36px;
+  }
