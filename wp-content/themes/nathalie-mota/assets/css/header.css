@@ -6,8 +6,8 @@
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
-    margin: 31px 0 31px 0;
-    padding: 0 146px 0 146px;
+    margin: 31px auto; /* Modification pour centrer horizontalement */
+    padding: 0 146px;
   }
   
   .site-header a {

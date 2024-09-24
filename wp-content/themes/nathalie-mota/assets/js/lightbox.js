@@ -4,12 +4,16 @@ class Lightbox {
   static init() {
     const links = document.querySelectorAll('.related-photo a');
     this.images = Array.from(links).map(link => link.querySelector('img').getAttribute('src'));
+    this.svgbtn = Array.from(links).map(link => link.querySelector('.plein-ecran svg'));
     links.forEach((link, index) => {
-      const svgLink = link.querySelector('.plein-ecran svg');
+      const svgLink = this.svgbtn[index];
       if (svgLink) {
         svgLink.addEventListener("click", (e) => {
           e.preventDefault();
-          new Lightbox(this.images, index);
+          var ref = svgLink.getAttribute('data-ref');
+          console.log(ref);
+          var category = svgLink.getAttribute('data-category');
+          new Lightbox(this.images, this.svgbtn,index, ref, category);
         });
       }
     });
@@ -19,10 +23,13 @@ class Lightbox {
    * @param {string[]} images URLs des images
    * @param {number} index Index de l'image actuelle
    */
-  constructor(images, index) {
+  constructor(images, svgbtn, index, ref, category) {
     this.images = images;
+    this.svgbtn = svgbtn;
     this.index = index;
-    this.element = this.buildDOM(images[index]);
+    this.ref = ref;
+    this.category = category;
+    this.element = this.buildDOM(images[index], ref, category);
     this.loadImage(images[index]);
     document.body.appendChild(this.element);
     Lightbox.instances.push(this); // Stocker l'instance
@@ -48,7 +55,7 @@ class Lightbox {
    * @param {string} url URL de l'image
    * @return {HTMLElement}
    */
-  buildDOM(url) {
+  buildDOM(url, ref, category) {
     const dom = document.createElement("div");
     dom.classList.add("lightbox");
     dom.innerHTML = `<button class="lightbox__close"></button>
@@ -58,11 +65,17 @@ class Lightbox {
             <div class="lightbox__loader"></div>
             <div class="lightbox__image"></div>
             <div class="lightbox__info">
-                <div class="lightbox__ref" data-ref=""></div>
-                <div class="lightbox__category" data-category=""></div>
+                <div class="lightbox__ref">${ref}</div>
+                <div class="lightbox__category">${category}</div>
             </div>
         </div>`;
     return dom;
+  }
+
+  loadinfo(ref, category) {
+    const info = this.element.querySelector(".lightbox__info");
+    info.innerHTML = `<div class="lightbox__ref">${ref}</div>
+        <div class="lightbox__category">${category}</div>`;
   }
 
   close() {
@@ -83,6 +96,9 @@ class Lightbox {
   updateImage() {
     const container = this.element.querySelector(".lightbox__image");
     container.innerHTML = '';
+    var ref = this.svgbtn[this.index].getAttribute('data-ref');
+    var category = this.svgbtn[this.index].getAttribute('data-category');
+    this.loadinfo(ref, category);
     this.loadImage(this.images[this.index]);
   }
 }

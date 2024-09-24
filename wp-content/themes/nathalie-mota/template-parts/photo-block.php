@@ -32,7 +32,7 @@ if ($related_photos->have_posts()) {
                 </div>
                 <div class="svg-overlay plein-ecran top-right">
                     <!-- Deuxième SVG en haut à droite -->
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" data-ref="<?php echo get_field('reference'); ?>" data-category="<?php echo get_the_terms(get_the_ID(), 'categorie')[0]->name; ?>">
                         <circle cx="17" cy="17" r="17" fill="black" />
                         <line x1="15" y1="10.5" x2="10" y2="10.5" stroke="white" />
                         <line y1="-0.5" x2="5" y2="-0.5" transform="matrix(-1 8.74227e-08 8.74227e-08 1 15 24)" stroke="white" />
