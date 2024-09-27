@@ -14,3 +14,9 @@ RewriteRule . /motaphoto/index.php [L]
 </IfModule>
 
 # END WordPress
+
+# BEGIN WebP Support
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+# END WebP Support

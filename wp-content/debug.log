@@ -18990,3 +18990,47 @@
 [24-Sep-2024 05:19:45 UTC] Automatic updates complete.
 [24-Sep-2024 06:19:40 UTC] Automatic updates starting...
 [24-Sep-2024 06:19:40 UTC] Automatic updates complete.
+[27-Sep-2024 07:39:24 UTC] Automatic updates starting...
+[27-Sep-2024 07:39:33 UTC] PHP Warning:  translations_api(): Une erreur imprévue s’est produite. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in C:\xampp\htdocs\motaphoto\wp-includes\functions.php on line 6085
+[27-Sep-2024 07:39:35 UTC] Automatic updates complete.
+[27-Sep-2024 12:01:44 UTC] Erreur d’événement de replanification de tâche pour le crochet ewww_image_optimizer_relative_migration. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"ewwwio_relative_migration_interval","args":[],"interval":300}
+[27-Sep-2024 12:58:20 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:20 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:20 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 874
+[27-Sep-2024 12:58:21 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:21 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:21 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:21 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:22 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:22 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:24 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:24 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:24 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:24 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:25 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:25 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:25 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:25 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:26 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:26 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:26 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:26 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:27 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:27 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:27 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:27 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:28 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:28 UTC] PHP Warning:  Undefined variable $image in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 12:58:28 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\motaphoto\wp-content\plugins\ewww-image-optimizer\aux-optimize.php on line 1018
+[27-Sep-2024 13:17:45 UTC] Erreur d’événement de replanification de tâche pour le crochet wp_ewwwio_media_optimize_cron. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"wp_ewwwio_media_optimize_cron_interval","args":[],"interval":300}
+[27-Sep-2024 18:10:36 UTC] Automatic updates starting...
+[27-Sep-2024 18:10:38 UTC] Automatic updates complete.

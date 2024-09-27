@@ -358,3 +358,24 @@ add_action('wp_ajax_nopriv_plus_photos', 'plus_photos');
 
 
 
+
+/******************************************************/
+/********** AUTORISER LE FORMAT WEBP ******************/
+/******************************************************/
+
+function autoriser_upload_webp($mime_types) {
+    $mime_types['webp'] = 'image/webp';
+    return $mime_types;
+}
+add_filter('upload_mimes', 'autoriser_upload_webp');
+
+function autoriser_upload_webp_mime($types) {
+    if (empty($types['webp'])) {
+        $types['webp'] = 'image/webp';
+    }
+    return $types;
+}
+add_filter('mime_types', 'autoriser_upload_webp_mime');
+
+
+
