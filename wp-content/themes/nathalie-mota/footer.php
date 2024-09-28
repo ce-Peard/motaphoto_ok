@@ -22,6 +22,8 @@
 	);
 
 	// get_template_part('template-parts/contact', 'modale');
+	get_template_part('template-parts/contact', 'modale-menu');
+
 
 	?>
 </footer><!-- #colophon -->

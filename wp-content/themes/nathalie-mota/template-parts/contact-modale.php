@@ -13,15 +13,21 @@
 </div>
 
 <script>
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function($) {
     $('#mota_Btn_contact').on('click', function() {
-        var refPhoto = $('#ref-photo').text().replace('Référence : ', '');
-        $('#myModal').find('input[name="ref-photo"]').val(refPhoto);
-        $('#myModal').show();
+      var refPhoto = $('#ref-photo').text().replace('Référence : ', '');
+      $('#myModal').find('input[name="ref-photo"]').val(refPhoto);
+      $('#myModal').show();
     });
 
     $('.close').on('click', function() {
-        $('#myModal').hide();
+      $('#myModal').hide();
     });
-});
+    // Fermer la modale en cliquant en dehors
+    $(window).on('click', function(event) {
+      if ($(event.target).is('#myModal')) {
+        $('#myModal').hide();
+      }
+    });
+  });
 </script>

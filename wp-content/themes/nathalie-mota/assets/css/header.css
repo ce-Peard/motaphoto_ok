@@ -1,6 +1,6 @@
-/******************************/
-/*********MENUHEADER***********/
-/******************************/
+/*******************************/
+/*********MENU HEADER***********/
+/*******************************/
 
 .site-header {
     display: flex;
@@ -10,7 +10,7 @@
     padding: 0 146px;
   }
   
-  .site-header a {
+  /* .site-header a {
     text-decoration: none;
     color: #000000;
   }
@@ -20,15 +20,36 @@
   }
   .site-header a:visited {
     text-decoration: none;
-    color: none;
+    color: none !important;
   }
   .site-header a:active {
     text-decoration: none;
-    color: none;
-  }
+    color: #e00000;
+  } */
   
   /* espacement entre les liens */
-  #menu-item-16,
-  #menu-item-11 {
+
+  #primary-menu li {
     padding-left: 36px;
   }
+
+  /* #primary-menu a:visited {
+    color: black;
+  } */
+  #primary-menu a {
+    text-decoration: none;
+    color: #000000;
+  }
+  #primary-menu a:hover {
+    text-decoration: none;
+    color: #e00000;
+  }
+  #primary-menu a:visited {
+    text-decoration: none;
+    color: none !important;
+  }
+  #primary-menu a:active {
+    text-decoration: none;
+    color: none;
+  }
+
