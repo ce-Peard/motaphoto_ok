@@ -44,6 +44,10 @@ if ($related_photos->have_posts()) {
                         <line x1="24.5" y1="18" x2="24.5" y2="24" stroke="white" />
                     </svg>
                 </div>
+                <div class="related-photo__info">
+                    <div class="related-photo__ref"><?php echo get_field('reference'); ?></div>
+                    <div class="related-photo__category"><?php echo get_the_terms(get_the_ID(), 'categorie')[0]->name; ?></div>
+                </div>
             </a>
         </div>
     <?php }

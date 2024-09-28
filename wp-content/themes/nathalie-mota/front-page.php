@@ -108,10 +108,6 @@ get_header();
 	</div>
 </main>
 
-<!-- Lightbox HTML -->
-<!-- <div class="lightbox" style="display: none;"> -->
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 	const selects = document.querySelectorAll('select.filter-uppercase');

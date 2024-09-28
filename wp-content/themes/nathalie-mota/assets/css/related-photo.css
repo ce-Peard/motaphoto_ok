@@ -1,0 +1,128 @@
+  /*********************************/
+  /*********RELATED PHOTOS**********/
+  /*********************************/
+  
+  .photo-related {
+    display: flex;
+    height: 495px;
+    gap: 20px;
+  }
+  
+  .related-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    height: 495px;
+  }
+  
+  .related-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+
+  /*********************************/
+  /*********SVG OVERLAY**********/
+  /*********************************/
+
+  /* Ajout de l'icône SVG au survol */
+  .related-photo .svg-overlay {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+  }
+  
+  .related-photo .svg-overlay.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+    .related-photo .svg-overlay.top-right {
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+    
+  .related-photo:hover .svg-overlay {
+    opacity: 1;
+  }
+  
+  /* Ajout du fond noir transparent au survol */
+    .related-photo:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+
+  /**************************************/
+  /*********RELATED PHOTOS INFO**********/
+  /**************************************/
+
+.related-photo__info {
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-end;
+  }
+  .related-photo:hover .related-photo__info {
+    opacity: 1;
+  }
+  
+  .related-photo__ref, .related-photo__category {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0; /* Retire la marge par défaut */
+    text-transform: uppercase;
+  }
+  
+  .related-photo__ref {
+    text-align: left;
+  }
+  
+  .related-photo__category {
+    text-align: right;
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 426px) {
+    /* .photo-gallery .related-photo img {
+      width: 317px;
+      height: 278px;
+    } */
+    .related-photo {
+      height: 278px;
+      width: 317px;
+    }
+  }
