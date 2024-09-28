@@ -53,7 +53,7 @@
 			</nav>
 			<div class="menu_ouvert">
 				<?php
-				get_template_part('template_parts/menu-ouvert');
+				get_template_part('template-parts/menu-ouvert');
 				?>
 			</div>
 		</header>

@@ -35,6 +35,8 @@
 }
 
 /* menu burger ouvert */
+
+/* polices */
 .menu_ouvert {
   position: fixed; /* Changement de relative à fixed */
   background-color: #e00000;
@@ -53,34 +55,46 @@
   margin-top: 80px;
   z-index: 1000;
 }
-/* .menu_ouvert a {
-  font-size: 2.9rem;
-}
-.menu_ouvert ul {
-  margin: 0;
-  padding-inline-start: 0;
-  overflow-y: visible;
-} */
 
-/* .menu_ouvert_logo {
-  width: 154.12px;
+.menu_ouvert_contenu ul {
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu_ouvert_contenu {
-  width: 100%;
-  max-height: 91vh;
-  overflow-y: auto;
-  list-style-type: none;
-  line-height: 1.3;
-}
 .menu_ouvert_contenu li {
-  font-size: 64px;
+    /* margin: auto; */
+    margin-top: 50px;
 }
-.menu_ouvert_contenu a {
-  text-decoration: none;
+
+#burger-menu {
+    text-transform: uppercase;
+    font-family: "SpaceMono", sans-serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 23.7px;
+    color: #fff;
+    list-style-type: none;
+    padding-left: 0; /* Ceci supprime spécifiquement l'espace à gauche */
+
 }
-.menu_ouvert_contenu a:hover {
-  filter: drop-shadow(0px 0px 5px #ff5c00) !important;
+
+#burger-menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block; 
+}
+
+/* Si vous voulez centrer le texte du menu */
+.menu_ouvert_contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .menu_ouvert_footer {
@@ -93,7 +107,6 @@
 .menu_ouvert_footer a {
   font-size: 15px;
 } */
-
 
 /* MEDIA QUERY */
 @media (min-width: 850px) {

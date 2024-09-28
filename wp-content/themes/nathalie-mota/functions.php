@@ -77,6 +77,7 @@ function nathalie_mota_setup()
 		array(
 			'menu-1' => esc_html__('Primary', 'nathalie-mota'),
 			'menu-2' => esc_html__('Footer', 'nathalie-mota'),
+			'menu-3' => esc_html__('Menu Burger', 'nathalie-mota'),
 		)
 	);
 
