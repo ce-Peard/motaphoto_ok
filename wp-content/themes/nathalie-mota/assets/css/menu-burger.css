@@ -1,0 +1,108 @@
+/*************/
+/*BURGER MENU*/
+/*************/
+/* .main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Icone menu burger */
+.menu-burger {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  right: 5em;
+  cursor: pointer;
+}
+.menu-burger .trait1,
+.menu-burger .trait2,
+.menu-burger .trait3 {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  margin: 6px 0;
+}
+.menu-burger.crossed .trait1 {
+  transform: rotate(45deg) translate(7px, 5px);
+}
+.menu-burger.crossed .trait2 {
+  opacity: 0;
+}
+.menu-burger.crossed .trait3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* menu burger ouvert */
+.menu_ouvert {
+  position: fixed; /* Changement de relative à fixed */
+  background-color: #e00000;
+  top: 0;
+  left: 0; /* Ajouté pour occuper toute la largeur */
+  right: 0; /* Ajouté pour occuper toute la largeur */
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 2s;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+  z-index: 1000;
+}
+/* .menu_ouvert a {
+  font-size: 2.9rem;
+}
+.menu_ouvert ul {
+  margin: 0;
+  padding-inline-start: 0;
+  overflow-y: visible;
+} */
+
+/* .menu_ouvert_logo {
+  width: 154.12px;
+}
+
+.menu_ouvert_contenu {
+  width: 100%;
+  max-height: 91vh;
+  overflow-y: auto;
+  list-style-type: none;
+  line-height: 1.3;
+}
+.menu_ouvert_contenu li {
+  font-size: 64px;
+}
+.menu_ouvert_contenu a {
+  text-decoration: none;
+}
+.menu_ouvert_contenu a:hover {
+  filter: drop-shadow(0px 0px 5px #ff5c00) !important;
+}
+
+.menu_ouvert_footer {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  bottom: 100px;
+}
+.menu_ouvert_footer a {
+  font-size: 15px;
+} */
+
+
+/* MEDIA QUERY */
+@media (min-width: 850px) {
+  .menu-burger {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .menu-principal-container {
+    display: none;
+  }
+}
