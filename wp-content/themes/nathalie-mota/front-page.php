@@ -83,7 +83,7 @@ get_header();
 		</div>
 	</section>
 	<!-- Photo Gallery -->
-	<section class="photo-gallery grid-gallery two-columns">
+	<section class="photo-gallery">
 		<?php
 		$args = array(
 			'post_type' => 'photos',

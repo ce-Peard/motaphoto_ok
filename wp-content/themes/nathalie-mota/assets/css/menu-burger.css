@@ -1,18 +1,11 @@
-/*************/
-/*BURGER MENU*/
-/*************/
-/* .main-navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-} */
+/*************************/
+/****BURGER MENU FERMÉ****/
+/*************************/
 
-/* Icone menu burger */
 .menu-burger {
   width: 40px;
   height: 30px;
-  position: absolute;
+  /* position: absolute; */
   right: 5em;
   cursor: pointer;
 }
@@ -34,15 +27,16 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* menu burger ouvert */
+/**************************/
+/****BURGER MENU OUVERT****/
+/**************************/
 
-/* polices */
 .menu_ouvert {
-  position: fixed; /* Changement de relative à fixed */
+  position: fixed;
   background-color: #e00000;
   top: 0;
-  left: 0; /* Ajouté pour occuper toute la largeur */
-  right: 0; /* Ajouté pour occuper toute la largeur */
+  left: 0;
+  right: 0;
   height: 100vh;
   overflow: hidden;
   display: none;
@@ -52,49 +46,46 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 98px;
   z-index: 1000;
 }
 
 .menu_ouvert_contenu ul {
-    margin: auto;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu_ouvert_contenu li {
-    /* margin: auto; */
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #burger-menu {
-    text-transform: uppercase;
-    font-family: "SpaceMono", sans-serif !important;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 44px;
-    line-height: 23.7px;
-    color: #fff;
-    list-style-type: none;
-    padding-left: 0; /* Ceci supprime spécifiquement l'espace à gauche */
-
+  text-transform: uppercase;
+  font-family: "SpaceMono", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 44px;
+  line-height: 23.7px;
+  color: #fff;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 #burger-menu a {
-    text-decoration: none;
-    color: #fff;
-    display: block; 
+  text-decoration: none;
+  color: #fff;
+  display: block;
 }
 
-/* Si vous voulez centrer le texte du menu */
 .menu_ouvert_contenu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .menu_ouvert_footer {
@@ -106,16 +97,17 @@
 }
 .menu_ouvert_footer a {
   font-size: 15px;
-} */
+}
 
-/* MEDIA QUERY */
-@media (min-width: 850px) {
-  .menu-burger {
+
+
+/* Supprimez ou commentez la media query existante */
+/*
+@media (min-width: 2000px) {
+  .menu-toggle {
     display: none;
   }
 }
-@media (max-width: 850px) {
-  .menu-principal-container {
-    display: none;
-  }
-}
+*/
+
+/* Ajoutez cette règle pour cacher le menu toggle sur tous les écrans */

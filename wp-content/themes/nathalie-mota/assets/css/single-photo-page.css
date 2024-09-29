@@ -3,130 +3,130 @@
 /*************************************/
 
 .main-photo-container {
-    max-width: 1148px !important;
-    width: 100% !important; /* Assurez-vous que la largeur est définie */
-    margin: 0 auto !important; /* Centrer le conteneur */
-  }
-  
-  .photo-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  
-  .photo-details-container {
-    border-bottom: 1px solid black;
-    margin-bottom: 3px;
-    margin-right: 10px;
-  }
-  
-  .photo-details {
-    display: flex;
-    flex-direction: column;
-    width: 420px;
-  }
-  
-  .photo-details p {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400 !important;
-    line-height: 20.73px;
-  }
-  
-  .photo-thumbnail,
-  .photo-details-container {
-    flex: 1;
-  }
-  
-  /*********CONTACT SECTION**********/
-  
-  .photo-contact {
-    display: flex;
-    align-items: center;
-    height: 119px;
-    border-bottom: 1px solid black;
-  }
-  
-  .photo-contact-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1148px !important;
-    width: 100% !important; /* Assurez-vous que la largeur est définie */
-    margin: 0 auto !important;
-  }
-  
-  .photo-contact-content p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 21px;
-  }
-  
-  .photo-contact-content,
-  .photo-navigation {
-    flex: 1;
-  }
-  
-  .vous-aimerez-aussi {
-    padding-top: 77px;
-  }
-  
-  /*********PHOTOS NAVIGATION**********/
+  max-width: 1148px !important;
+  width: 100% !important; /* Assurez-vous que la largeur est définie */
+  margin: 0 auto !important; /* Centrer le conteneur */
+}
 
-  .photo-navigation {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    height: 90%;
-    flex-direction: column-reverse;
-  }
-  
-  .nav-link:hover .nav-thumbnail {
-    display: block;
-  }
-  
-  /*********FLECHES NAVIGATION**********/
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
-  .nav-link {
-    position: relative;
-    display: inline-block;
-    margin: 0 10px; /* Espacement entre les flèches */
-  }
-  
-  .nav-link img {
-    display: block;
-  }
-  .thumbnail-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: hidden;
-    background-color: #ffffff;
-  }
-  
-  .nav-thumbnail {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    display: none;
-    z-index: 1000;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .nav-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Assurez-vous que l'image couvre entièrement le conteneur */
-    object-position: center; /* Centrez l'image dans le conteneur */
-  }
-  
-  .nav-link:hover .nav-thumbnail {
-    display: block; /* Affichez la miniature au survol */
-  }
-   
-  
+.photo-details-container {
+  border-bottom: 1px solid black;
+  margin-bottom: 3px;
+  margin-right: 10px;
+}
+
+.photo-details {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+.photo-details p {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400 !important;
+  line-height: 20.73px;
+}
+
+.photo-thumbnail,
+.photo-details-container {
+  flex: 1;
+}
+
+/*********CONTACT SECTION**********/
+
+.photo-contact {
+  display: flex;
+  align-items: center;
+  height: 119px;
+  border-bottom: 1px solid black;
+}
+
+.photo-contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1148px !important;
+  width: 100% !important; /* Assurez-vous que la largeur est définie */
+  margin: 0 auto !important;
+}
+
+.photo-contact-content p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.photo-contact-content,
+.photo-navigation {
+  flex: 1;
+}
+
+.vous-aimerez-aussi {
+  padding-top: 77px;
+}
+
+/*********PHOTOS NAVIGATION**********/
+
+.photo-navigation {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 90%;
+  flex-direction: column-reverse;
+}
+
+.nav-link:hover .nav-thumbnail {
+  display: block;
+}
+
+/*********FLECHES NAVIGATION**********/
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px; /* Espacement entre les flèches */
+}
+
+.nav-link img {
+  display: block;
+}
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.nav-thumbnail {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  display: none;
+  z-index: 1000;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assurez-vous que l'image couvre entièrement le conteneur */
+  object-position: center; /* Centrez l'image dans le conteneur */
+}
+
+.nav-link:hover .nav-thumbnail {
+  display: block; /* Affichez la miniature au survol */
+}
+
+

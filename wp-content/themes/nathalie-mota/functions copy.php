@@ -20,6 +20,7 @@ if (! defined('_S_VERSION')) {
 
 function nathaliemota_enqueue_styles()
 {
+	wp_enqueue_style('media-queries-style', get_template_directory_uri() . '/assets/css/media-queries.css', array(), '1.0.0');
 	wp_enqueue_style('lightbox-style', get_template_directory_uri() . '/assets/css/lightbox.css', array(), '1.0.0');
 	wp_enqueue_style('menu-header-style', get_template_directory_uri() . '/assets/css/header.css', array(), '1.0.0');
 	wp_enqueue_style('menu-footer-style', get_template_directory_uri() . '/assets/css/footer.css', array(), '1.0.0');

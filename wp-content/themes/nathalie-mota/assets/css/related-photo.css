@@ -110,19 +110,3 @@
     text-align: right;
   }
   
-
-
-
-
-
-
-  @media (max-width: 426px) {
-    /* .photo-gallery .related-photo img {
-      width: 317px;
-      height: 278px;
-    } */
-    .related-photo {
-      height: 278px;
-      width: 317px;
-    }
-  }
