@@ -16,6 +16,7 @@
     overflow: hidden;
     position: relative;
     height: 495px;
+    max-width: 564px;
   }
   
   .related-photo img {

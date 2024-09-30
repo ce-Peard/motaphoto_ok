@@ -23,7 +23,7 @@
 .photo-details {
   display: flex;
   flex-direction: column;
-  width: 420px;
+  /* width: 420px; */
 }
 
 .photo-details p {
@@ -128,5 +128,3 @@
 .nav-link:hover .nav-thumbnail {
   display: block; /* Affichez la miniature au survol */
 }
-
-
