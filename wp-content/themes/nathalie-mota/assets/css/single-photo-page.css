@@ -4,8 +4,8 @@
 
 .main-photo-container {
   max-width: 1148px !important;
-  width: 100% !important; /* Assurez-vous que la largeur est définie */
-  margin: 0 auto !important; /* Centrer le conteneur */
+  width: 100% !important;
+  margin: 0 auto !important;
 }
 
 .photo-container {
@@ -16,14 +16,12 @@
 
 .photo-details-container {
   border-bottom: 1px solid black;
-  margin-bottom: 3px;
-  margin-right: 10px;
+  margin: 3px 10px 0 0;
 }
 
 .photo-details {
   display: flex;
   flex-direction: column;
-  /* width: 420px; */
 }
 
 .photo-details p {
@@ -40,19 +38,21 @@
 
 /*********CONTACT SECTION**********/
 
-.photo-contact {
+.photo-contact,
+.photo-contact-content {
   display: flex;
   align-items: center;
+}
+
+.photo-contact {
   height: 119px;
   border-bottom: 1px solid black;
 }
 
 .photo-contact-content {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: 1148px !important;
-  width: 100% !important; /* Assurez-vous que la largeur est définie */
+  width: 100% !important;
   margin: 0 auto !important;
 }
 
@@ -68,7 +68,8 @@
 }
 
 .vous-aimerez-aussi {
-  padding-top: 77px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /*********PHOTOS NAVIGATION**********/
@@ -81,21 +82,18 @@
   flex-direction: column-reverse;
 }
 
-.nav-link:hover .nav-thumbnail {
-  display: block;
-}
-
 /*********FLECHES NAVIGATION**********/
 
 .nav-link {
   position: relative;
   display: inline-block;
-  margin: 0 10px; /* Espacement entre les flèches */
+  margin: 0 10px;
 }
 
 .nav-link img {
   display: block;
 }
+
 .thumbnail-container {
   position: relative;
   width: 100%;
@@ -121,12 +119,8 @@
 .nav-thumbnail img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Assurez-vous que l'image couvre entièrement le conteneur */
-  object-position: center; /* Centrez l'image dans le conteneur */
-}
-
-.nav-link:hover .nav-thumbnail {
-  display: block; /* Affichez la miniature au survol */
+  object-fit: cover;
+  object-position: center;
 }
 
 #mota_Btn_contact {
@@ -141,7 +135,7 @@
   font-style: normal;
   font-size: 12px;
   line-height: 17.77px;
-  transition: all 0.3s ease-in-out; /* Ajout de la transition */
+  transition: all 0.3s ease-in-out;
 }
 
 #mota_Btn_contact:hover {

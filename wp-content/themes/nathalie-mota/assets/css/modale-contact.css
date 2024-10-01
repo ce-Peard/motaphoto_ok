@@ -73,6 +73,13 @@
     color: #000000;
 }
 
+.wpcf7-submit:hover {
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+}
+
 #message {
     height: 200px;
 }

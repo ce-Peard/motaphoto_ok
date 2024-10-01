@@ -2,27 +2,41 @@
 /****BURGER MENU FERMÉ****/
 /*************************/
 
+:root {
+  --burger-width: 40px;
+  --burger-height: 30px;
+  --burger-color: #000;
+  --menu-bg-color: #e00000;
+  --menu-font-color: #fff;
+  --menu-font-family: "SpaceMono", sans-serif;
+  --menu-font-size: 44px;
+  --menu-line-height: 23.7px;
+}
+
 .menu-burger {
-  width: 40px;
-  height: 30px;
-  /* position: absolute; */
+  width: var(--burger-width);
+  height: var(--burger-height);
   right: 5em;
   cursor: pointer;
 }
+
 .menu-burger .trait1,
 .menu-burger .trait2,
 .menu-burger .trait3 {
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: var(--burger-color);
   margin: 6px 0;
 }
+
 .menu-burger.crossed .trait1 {
   transform: rotate(45deg) translate(7px, 5px);
 }
+
 .menu-burger.crossed .trait2 {
   opacity: 0;
 }
+
 .menu-burger.crossed .trait3 {
   transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -33,9 +47,8 @@
 
 .menu_ouvert {
   position: fixed;
-  /* display: flex !important; */
   justify-content: center;
-  background-color: #e00000;
+  background-color: var(--menu-bg-color);
   top: 0;
   left: 0;
   right: 0;
@@ -51,37 +64,6 @@
   z-index: 1000;
 }
 
-.menu_ouvert_contenu ul {
-  margin: auto;
-  /* margin-top: 100px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu_ouvert_contenu li {
-  margin: 50px;
-  margin-top: 0px;
-}
-
-#burger-menu {
-  text-transform: uppercase;
-  font-family: "SpaceMono", sans-serif !important;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 44px;
-  line-height: 23.7px;
-  color: #fff;
-  list-style-type: none;
-  padding-left: 0;
-}
-
-#burger-menu a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-}
-
 .menu_ouvert_contenu {
   display: flex;
   flex-direction: column;
@@ -90,26 +72,32 @@
   height: 100%;
 }
 
-.menu_ouvert_footer {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+.menu_ouvert_contenu ul {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu_ouvert_contenu li {
+  margin: 50px;
+  margin-top: 0;
+}
+
+#burger-menu {
+  text-transform: uppercase;
+  font-family: var(--menu-font-family) !important;
   font-weight: 400;
-  position: absolute;
-  bottom: 100px;
+  font-style: normal;
+  font-size: var(--menu-font-size);
+  line-height: var(--menu-line-height);
+  color: var(--menu-font-color);
+  list-style-type: none;
+  padding-left: 0;
 }
-.menu_ouvert_footer a {
-  font-size: 15px;
+
+#burger-menu a {
+  text-decoration: none;
+  color: var(--menu-font-color);
+  display: block;
 }
-
-
-
-/* Supprimez ou commentez la media query existante */
-/*
-@media (min-width: 2000px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-*/
-
-/* Ajoutez cette règle pour cacher le menu toggle sur tous les écrans */

@@ -99,7 +99,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    margin: 0; /* Retire la marge par défaut */
+    margin: 0; 
     text-transform: uppercase;
   }
   

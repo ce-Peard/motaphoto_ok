@@ -35,7 +35,6 @@
     font-family: "SpaceMono", sans-serif;
     color: transparent;
     -webkit-text-stroke: 2px rgb(255, 252, 252);
-    text-align: center;
     position: relative;
     z-index: 20;
     padding: 0 20px;
@@ -50,11 +49,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px auto 20px;
     width: 1148px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .filter-uppercase {
@@ -64,13 +60,6 @@
   .filter-uppercase option {
     text-transform: capitalize;
   }
-
-  /* #menu1-categories option:hover {
-    background-color: brown;
-  } */
-  /* .option-hover {
-    background-color: brown; 
-  } */
 
   .filter-container1 {
     display: flex;
@@ -101,8 +90,8 @@
     margin: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 100%; /* Utilisez 100% pour une largeur flexible */
-    max-width: 1148px; /* Limitez la largeur maximale */
+    width: 100%;
+    max-width: 1148px;
   }
   
   /***********************************/
@@ -121,7 +110,7 @@
     font-style: normal;
     font-size: 12px;
     line-height: 17.77px;
-    transition: all 0.3s ease-in-out; /* Ajout de la transition */
+    transition: all 0.3s ease-in-out;
 
   }
   

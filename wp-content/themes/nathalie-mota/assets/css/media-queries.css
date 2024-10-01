@@ -1,15 +1,24 @@
+:root {
+  --font-size-h1: 27.59px;
+  --font-size-h2: 46px;
+  --font-size-h3: 18px;
+  --font-size-p: 14px;
+  --font-size-banner-h1: 27.59px;
+  --font-size-photo-details-h2: 46px;
+}
+
 @media (max-width: 1173px) {
   body h1 {
-    font-size: 27.59px;
+    font-size: var(--font-size-h1);
   }
   body h2 {
-    font-size: 46px;
+    font-size: var(--font-size-h2);
   }
   body h3 {
-    font-size: 18px;
+    font-size: var(--font-size-h3);
   }
   body p {
-    font-size: 14px;
+    font-size: var(--font-size-p);
   }
   body h1, body h2, body h3, body p {
     max-width: 100%;
@@ -42,7 +51,7 @@ body.no-scroll {
     height: 250px !important;
   }
   .banner h1 {
-    font-size: 27.59px !important;
+    font-size: var(--font-size-banner-h1) !important;
   }
   .site-header {
     padding: 0;
@@ -144,7 +153,7 @@ body.no-scroll {
     max-width: 100%;
   }
   .photo-details h2 {
-    font-size: 46px;
+    font-size: var(--font-size-photo-details-h2);
   }
   .vous-aimerez-aussi {
     display: flex;
