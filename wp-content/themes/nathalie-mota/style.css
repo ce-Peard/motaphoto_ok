@@ -1031,8 +1031,16 @@ textarea {
   margin-bottom: 1.5em;
 }
 
+/****NOUVEAU CODE****/
 
-
+.site-main article {
+  max-width: 1148px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 15%;
+  margin-right: 15%; */
+}
 
 
 

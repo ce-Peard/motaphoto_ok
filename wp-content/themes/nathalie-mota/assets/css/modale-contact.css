@@ -27,6 +27,10 @@
     height: 769px;
 }
 
+.modal-content .close {
+    display: none;
+}
+
 .modal-content img {
     padding-top: 10px;
 }
