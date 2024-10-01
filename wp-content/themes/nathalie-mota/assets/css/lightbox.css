@@ -38,10 +38,18 @@
   justify-content: flex-end;
   right: 3%;
   left: auto;
-  width: 50px; /* Ajuster la largeur pour correspondre à la taille de l'icône */
+  width: 50px;
   background: url(../images/arrow.svg) right center / 25px 18px no-repeat;
 }
-
+/* .lightbox__next {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 3%;
+  left: auto;
+  width: 50px;
+  background: url(../images/na_suivante.webp) right center no-repeat;
+} */
 .lightbox__next::before {
   content: "Suivante";
   color: #ffffff !important;
@@ -52,7 +60,7 @@
   font-weight: 700;
 }
 .lightbox__next:hover {
-  background: url(../images/arrow-long.svg) right center / 50px 18px no-repeat; /* Ajuster la taille et la position */
+  background: url(../images/arrow-long.svg) right center / 50px 18px no-repeat;
 }
 
 .lightbox__prev {

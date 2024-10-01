@@ -21,22 +21,21 @@
   line-height: 23.7px;
 }
 
-/* espacement entre les liens */
+/* liens */
 
 #primary-menu li {
   padding-left: 36px;
 }
 
-/* #primary-menu a:visited {
-    color: black;
-  } */
 #primary-menu a {
   text-decoration: none;
   color: #000000;
+  transition: color 0.2s ease-in-out;
+
 }
 #primary-menu a:hover {
   text-decoration: none;
-  color: #e00000;
+  font-weight: 700;
 }
 #primary-menu a:visited {
   text-decoration: none;
