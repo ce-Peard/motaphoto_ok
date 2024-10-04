@@ -10,8 +10,7 @@
   --lightbox-z-index: 1000;
   --lightbox-close-size: 50px;
   --lightbox-loader-size: 38px;
-  /* --lightbox-arrow-width: 116px; */
-  /* --lightbox-arrow-long-size: 50px 18px; */
+  --lightbox-arrow-width: 116px;
 }
 
 /* LIGHTBOX */
@@ -33,57 +32,34 @@
 .lightbox__next,
 .lightbox__prev {
   border: none;
-  /* width: 92px !important; */
   height: 100%;
   position: fixed;
   cursor: pointer;
+  width: var(--lightbox-arrow-width);
+  max-width: var(--lightbox-arrow-width);
+  display: flex;
+  align-items: center;
 }
 
 .lightbox__next {
-  content: none;
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
   right: 1.5%;
-  width: 116px;
-  max-width: 116px;
-  /* background: url(../images/arrow_next.svg) right center / var(--lightbox-arrow-size) no-repeat; */
   background: url(../images/arrow_next.svg) no-repeat left center;
-  /* background-size: var(--lightbox-arrow-width) auto; */
 }
 
 .lightbox__next:hover {
-  width: 116px;
   background: url(../images/arrow_next_hover.svg) no-repeat left center;
 }
 
 .lightbox__prev {
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
   left: 0.2%;
-  width: 116px;
-  max-width: 116px;
-  /* padding-left: 40px; */
   background: url(../images/arrow_prev.svg) no-repeat right center;
-  background-position: right center; /* Aligne le SVG à droite */
 }
 
 .lightbox__prev:hover {
-  width: 116px;
   background: url(../images/arrow_prev_hover.svg) no-repeat right center;
 }
-
-/* .lightbox__prev::after {
-  content: "";
-  background: url(../images/arrow.svg) center center / var(--lightbox-arrow-size) no-repeat;
-  width: 25px;
-  height: 18px;
-  position: absolute;
-  left: 8px;
-  transform: rotate(180deg);
-} */
-
 
 /*********CROIX FERMETURE**********/
 .lightbox__close {
