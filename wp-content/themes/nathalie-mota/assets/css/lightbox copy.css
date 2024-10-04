@@ -10,8 +10,8 @@
   --lightbox-z-index: 1000;
   --lightbox-close-size: 50px;
   --lightbox-loader-size: 38px;
-  /* --lightbox-arrow-width: 116px; */
-  /* --lightbox-arrow-long-size: 50px 18px; */
+  --lightbox-arrow-size: 25px 18px;
+  --lightbox-arrow-long-size: 50px 18px;
 }
 
 /* LIGHTBOX */
@@ -32,29 +32,35 @@
 /*********FLECHES NAVIGATION**********/
 .lightbox__next,
 .lightbox__prev {
+  font-family: var(--lightbox-font-family);
   border: none;
-  /* width: 92px !important; */
+  width: 92px !important;
   height: 100%;
   position: fixed;
   cursor: pointer;
 }
 
 .lightbox__next {
-  content: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  right: 1.5%;
-  width: 116px;
-  max-width: 116px;
-  /* background: url(../images/arrow_next.svg) right center / var(--lightbox-arrow-size) no-repeat; */
-  background: url(../images/arrow_next.svg) no-repeat left center;
-  /* background-size: var(--lightbox-arrow-width) auto; */
+  right: 3%;
+  width: 50px;
+  background: url(../images/arrow.svg) right center / var(--lightbox-arrow-size) no-repeat;
+}
+
+.lightbox__next::before {
+  content: "Suivante";
+  color: var(--lightbox-font-color) !important;
+  padding-right: 20px;
+}
+
+.lightbox__next:hover::before {
+  font-weight: 700;
 }
 
 .lightbox__next:hover {
-  width: 116px;
-  background: url(../images/arrow_next_hover.svg) no-repeat left center;
+  background: url(../images/arrow-long.svg) right center / var(--lightbox-arrow-long-size) no-repeat;
 }
 
 .lightbox__prev {
@@ -62,19 +68,22 @@
   align-items: center;
   justify-content: flex-start;
   left: 0.2%;
-  width: 116px;
-  max-width: 116px;
-  /* padding-left: 40px; */
-  background: url(../images/arrow_prev.svg) no-repeat right center;
-  background-position: right center; /* Aligne le SVG à droite */
+  padding-left: 40px;
+  background: none;
 }
 
-.lightbox__prev:hover {
-  width: 116px;
-  background: url(../images/arrow_prev_hover.svg) no-repeat right center;
+.lightbox__prev::before {
+  content: "Précédente";
+  color: var(--lightbox-font-color) !important;
+  margin-right: 8px;
 }
 
-/* .lightbox__prev::after {
+.lightbox__prev:hover::before {
+  font-weight: 700;
+  font-size: var(--lightbox-font-size);
+}
+
+.lightbox__prev::after {
   content: "";
   background: url(../images/arrow.svg) center center / var(--lightbox-arrow-size) no-repeat;
   width: 25px;
@@ -82,8 +91,11 @@
   position: absolute;
   left: 8px;
   transform: rotate(180deg);
-} */
+}
 
+.lightbox__prev:hover::after {
+  background: url(../images/arrow-long.svg) center center / 34px 18px no-repeat;
+}
 
 /*********CROIX FERMETURE**********/
 .lightbox__close {
