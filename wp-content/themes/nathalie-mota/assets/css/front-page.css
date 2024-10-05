@@ -1,133 +1,28 @@
 /*****************************/
 /*********FRONT-PAGE**********/
 /*****************************/
-
+:root{
+  --banner-height:962px;
+  --banner-font-size:96px;
+  --banner-line-height:142.18px;
+  --banner-stroke-width:2px;
+  --banner-stroke-color:rgb(255,252,252);
+  --filter-container-width:1148px;
+  --filter-menu-width:260px;
+  --filter-menu-font-size:12px;
+  --filter-menu-line-height:18px;
+  --load-more-width:272px;
+  --load-more-height:50px;
+  --load-more-font-size:12px;
+  --load-more-line-height:17.77px;
+  --load-more-hover-color:#ffffff;
+  --load-more-hover-bg:#000000;
+}
 /*********BANNER*********/
-
-.banner {
-    width: 100%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 962px;
-    overflow: hidden;
-    z-index: 2;
-    text-align: center;
-  }
-  
-  .banner img {
-    z-index: 10;
-    max-height: 962px;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .banner h1 {
-    font-size: 96px;
-    font-weight: 700;
-    line-height: 142.18px;
-    font-style: italic;
-    font-family: "SpaceMono", sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 2px rgb(255, 252, 252);
-    position: relative;
-    z-index: 20;
-    padding: 0 20px;
-  }
-  
-  /**********************************/
-  /*********MENUS DEROULANTS*********/
-  /**********************************/
-  
-  .filter-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 40px auto 20px;
-    width: 1148px;
-  }
-  
-  .filter-uppercase {
-    text-transform: uppercase;
-  }
-  
-  .filter-uppercase option {
-    text-transform: capitalize;
-  }
-
-  .filter-container1 {
-    display: flex;
-    gap: 20px;
-  }
-  
-  #menu1-categories, #menu2-formats, #menu3-tri {
-    padding: 10px;
-    width: 260px;
-    height: auto;
-    border-radius: 8px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 18px;
-  }
-
-  /*************************************/
-  /*********GRID PHOTO GALLERY**********/
-  /*************************************/
-  
-  .photo-gallery {
-    display: grid;
-    position: relative;
-    z-index: 1;
-    height: auto;
-    margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1148px;
-  }
-  
-  /***********************************/
-  /*********LOAD MORE PHOTOS**********/
-  /***********************************/
-  
-  #load-more-photos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 272px;
-    height: 50px;
-    border-radius: 2px 0px 0px 0px;
-    font-family: "SpaceMono", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 12px;
-    line-height: 17.77px;
-    transition: all 0.3s ease-in-out;
-
-  }
-  
-  #load-more-photos:hover {
-    font-weight: 700;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #000000;
-  }
-  
-  .load-more-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-
-
-
+.banner{width:100%;display:flex;position:relative;justify-content:center;align-items:center;height:var(--banner-height);overflow:hidden;z-index:2;text-align:center}.banner img{z-index:10;max-height:var(--banner-height);object-fit:cover;width:100%;height:100%;position:absolute;top:0;left:0}.banner h1{font-size:var(--banner-font-size);font-weight:700;line-height:var(--banner-line-height);font-style:italic;font-family:"SpaceMono",sans-serif;color:transparent;-webkit-text-stroke:var(--banner-stroke-width) var(--banner-stroke-color);position:relative;z-index:20;padding:0 20px}
+/*********FILTRES MENUS DEROULANTS*********/
+.filter-container{display:flex;flex-direction:row;justify-content:space-between;align-items:center;margin:40px auto 20px;width:var(--filter-container-width)}.filter-uppercase{text-transform:uppercase}.filter-uppercase option{text-transform:capitalize}.filter-container1{display:flex;gap:20px}#menu1-categories,#menu2-formats,#menu3-tri{padding:10px;width:var(--filter-menu-width);height:auto;border-radius:8px;font-family:"Poppins",sans-serif;font-weight:500;font-style:normal;font-size:var(--filter-menu-font-size);line-height:var(--filter-menu-line-height)}
+/*********GRID PHOTO GALLERY**********/
+.photo-gallery{display:grid;position:relative;z-index:1;height:auto;margin:auto;grid-template-columns:repeat(2,1fr);gap:20px;width:100%;max-width:var(--filter-container-width)}
+/*********LOAD MORE PHOTOS**********/
+#load-more-photos{display:flex;justify-content:center;align-items:center;width:var(--load-more-width);height:var(--load-more-height);border-radius:2px 0 0 0;font-family:"SpaceMono",sans-serif;font-weight:400;font-style:normal;font-size:var(--load-more-font-size);line-height:var(--load-more-line-height);transition:all .3s ease-in-out}#load-more-photos:hover{font-weight:700;cursor:pointer;color:var(--load-more-hover-color);background-color:var(--load-more-hover-bg)}.load-more-container{display:flex;justify-content:center;align-items:center;margin-top:20px}

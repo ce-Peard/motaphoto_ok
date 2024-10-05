@@ -46,12 +46,12 @@ class Lightbox {
     img.src = url;
   }
 
-  show(images, index, ref, category) {
+  show(images, index) {
     this.images = images;
     this.currentIndex = index;
     this.element.style.display = 'flex';
     this.loadImage(this.images[this.currentIndex]);
-    this.updateInfo(ref, category);
+    this.updateInfo();
   }
 
   hide() {
@@ -93,7 +93,7 @@ function initLightbox() {
         e.preventDefault();
         const ref = svgLink.getAttribute('data-ref');
         const category = svgLink.getAttribute('data-category');
-        lightbox.show(images, index, ref, category);
+        lightbox.show(images, index);
       });
     }
   });

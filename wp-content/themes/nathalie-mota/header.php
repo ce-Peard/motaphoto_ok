@@ -51,9 +51,9 @@
 					</div>
 				</div>
 			</nav>
-			<div class="menu_ouvert">
+			<div class="menu_burger_ouvert">
 				<?php
-				get_template_part('template-parts/menu-ouvert');
+				get_template_part('template-parts/menu-burger-ouvert');
 				?>
 			</div>
 		</header>

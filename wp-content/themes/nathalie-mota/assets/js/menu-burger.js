@@ -4,8 +4,8 @@ jQuery(document).ready(function ($) {
   const trait1 = document.querySelector(".trait1");
   const trait2 = document.querySelector(".trait2");
   const trait3 = document.querySelector(".trait3");
-  const menuOuvert = document.querySelector(".menu_ouvert");
-  const liensMenu = document.querySelectorAll(".menu_ouvert a");
+  const menuOuvert = document.querySelector(".menu_burger_ouvert");
+  const liensMenu = document.querySelectorAll(".menu_burger_ouvert a");
 
   // Fonction pour ouvrir ou fermer le menu
   function toggleMenu() {

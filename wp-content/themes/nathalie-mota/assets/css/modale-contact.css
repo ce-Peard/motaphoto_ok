@@ -1,96 +1,27 @@
 /********************************/
 /*********MODAL POP-UP***********/
 /********************************/
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 11;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+:root {
+    --modal-z-index: 11;
+    --modal-bg-color: rgba(0, 0, 0, 0.4);
+    --modal-content-bg: #fefefe;
+    --modal-content-border: #888;
+    --modal-content-max-width: 597px;
+    --modal-content-height: 769px;
+    --modale-text-font: "Poppins", sans-serif;
+    --modale-text-color: #313144;
+    --form-input-width: 263px;
+    --form-input-height: 40px;
+    --submit-font: "Space Mono", monospace;
+    --submit-color: #000000;
+    --submit-hover-color: #ffffff;
+    --submit-hover-bg: #000000;
+    --message-height: 200px;
+    --message-textarea-height: 180px;
 }
-
+/* Modal (background) */
+.modal{display:none;position:fixed;z-index:var(--modal-z-index);left:0;top:0;width:100%;height:100%;overflow:auto;background-color:var(--modal-bg-color)}
 /* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #888;
-    max-width: 597px;
-    height: 769px;
-}
-
-.modal-content .close {
-    display: none;
-}
-
-.modal-content img {
-    padding-top: 10px;
-}
-
+.modal-content{background-color:var(--modal-content-bg);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border:1px solid var(--modal-content-border);max-width:var(--modal-content-max-width);height:var(--modal-content-height)}.modal-content .close{display:none}.modal-content img{padding-top:10px}
 /* contact-form 7 */
-.modale-text {
-    padding-top: 10px;
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 18px;
-    color: #313144;
-    text-transform: uppercase;
-}
-
-.wpcf7 p {
-    display: flex;
-    justify-content: center;
-}
-
-.wpcf7 p label {
-    display: block;
-    width: 263px;
-}
-
-.wpcf7 input,
-.wpcf7-form-control {
-    width: 263px;
-    height: 40px;
-}
-
-.wpcf7-submit {
-    margin-top: 10px;
-    margin-left: 72px;
-    height: 50px !important;
-    font-family: "Space Mono", monospace;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000000;
-}
-
-.wpcf7-submit:hover {
-    font-weight: 700;
-    cursor: pointer;
-    color: #ffffff;
-    background-color: #000000;
-}
-
-#message {
-    height: 200px;
-}
-
-#message textarea {
-    height: 180px !important;
-    width: 100%;
-    max-height: 180px;
-}
-
-#message .wpcf7-form-control-wrap {
-    display: flex;
-    flex-direction: column;
-}
+.modale-text{padding-top:10px;font-family:var(--modale-text-font);font-size:12px;font-weight:600;line-height:18px;color:var(--modale-text-color);text-transform:uppercase}.wpcf7 p{display:flex;justify-content:center}.wpcf7 p label{display:block;width:var(--form-input-width)}.wpcf7 input,.wpcf7-form-control{width:var(--form-input-width);height:var(--form-input-height)}.wpcf7-submit{margin-top:10px;margin-left:72px;height:50px!important;font-family:var(--submit-font);font-weight:400;font-size:12px;line-height:18px;color:var(--submit-color)}.wpcf7-submit:hover{font-weight:700;cursor:pointer;color:var(--submit-hover-color);background-color:var(--submit-hover-bg)}#message{height:var(--message-height)}#message textarea{height:var(--message-textarea-height)!important;width:100%;max-height:var(--message-textarea-height)}#message .wpcf7-form-control-wrap{display:flex;flex-direction:column}

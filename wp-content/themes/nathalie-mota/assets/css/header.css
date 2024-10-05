@@ -1,7 +1,6 @@
 /*******************************/
 /*********MENU HEADER***********/
 /*******************************/
-
 :root {
   --header-padding: 0 146px;
   --header-menu-font-family: "SpaceMono", sans-serif;
@@ -10,41 +9,9 @@
   --header-menu-padding-left: 36px;
   --header-menu-hover-weight: 700;
 }
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
-  margin: 31px auto;
-  padding: var(--header-padding);
-}
-
+.site-header{display:flex;justify-content:space-between;align-items:center;max-width:1440px;margin:31px auto;padding:var(--header-padding)}
 /*********POLICES*********/
-#primary-menu {
-  text-transform: uppercase;
-  font-family: var(--header-menu-font-family) !important;
-  font-weight: 400;
-  font-size: var(--header-menu-font-size);
-  line-height: var(--header-menu-line-height);
-}
-
+#primary-menu{text-transform:uppercase;font-family:var(--header-menu-font-family)!important;font-weight:400;font-size:var(--header-menu-font-size);line-height:var(--header-menu-line-height)}
 /*********LIENS*********/
-#primary-menu li {
-  padding-left: var(--header-menu-padding-left);
-}
-
-#primary-menu a {
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-#primary-menu a:hover {
-  font-weight: var(--header-menu-hover-weight);
-}
-
-#primary-menu a:visited,
-#primary-menu a:active {
-  color: inherit !important;
-}
+#primary-menu li{padding-left:var(--header-menu-padding-left)}#primary-menu a{text-decoration:none;transition:color .2s ease-in-out}#primary-menu a:hover{font-weight:var(--header-menu-hover-weight)}#primary-menu a:visited,#primary-menu a:active{color:inherit!important}
 
