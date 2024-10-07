@@ -38,35 +38,14 @@ jQuery(document).ready(function ($) {
 
   // Gestion des clics sur les liens du menu
   liensMenu.forEach((lien) => {
-    lien.addEventListener("click", (event) => {
-      // Vérifier si c'est le lien "Contact"
-      if (lien.textContent.trim().toLowerCase() === "contact") {
-        event.preventDefault(); // Empêcher la navigation par défaut
-        
-        // Fermer le menu burger
-        icone_menuBurger.classList.remove("crossed");
-        trait1.style.transform = "none";
-        trait2.style.opacity = "1";
-        trait3.style.transform = "none";
-        menuOuvert.style.opacity = "0";
-        setTimeout(() => {
-          menuOuvert.style.display = "none";
-          // Réactiver le défilement de la page
-          document.body.classList.remove("no-scroll");
-        }, 300);
-
-        // Ouvrir la modale de contact
-        $('#myModal').show();
-      } else {
-        // Pour les autres liens, fermer le menu normalement
-        icone_menuBurger.classList.remove("crossed");
-        trait1.style.transform = "none";
-        trait2.style.opacity = "1";
-        trait3.style.transform = "none";
-        menuOuvert.style.display = "none";
-        // Réactiver le défilement de la page
-        document.body.classList.remove("no-scroll");
-      }
+    lien.addEventListener("click", () => {
+      // Fermer le menu burger pour tous les liens
+      icone_menuBurger.classList.remove("crossed");
+      trait1.style.transform = "none";
+      trait2.style.opacity = "1";
+      trait3.style.transform = "none";
+      menuOuvert.style.display = "none";
+      document.body.classList.remove("no-scroll");
     });
   });
 });

@@ -14,9 +14,9 @@ if (! defined('_S_VERSION')) {
 }
 
 
-/*******************************************/
-/*********APPEL FICHIER STYLE.CSS***********/
-/*******************************************/
+/*********************************************************/
+/*********APPEL FICHIER STYLE.CSS + JQUERY + JS***********/
+/*********************************************************/
 
 function nathaliemota_enqueue_styles()
 {
@@ -31,6 +31,7 @@ function nathaliemota_enqueue_styles()
 	wp_enqueue_style('media-queries-style', get_template_directory_uri() . '/assets/css/media-queries.css', array(), '1.0.0');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('nathaliemota-main-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('nathaliemota-modale-contact-script', get_template_directory_uri() . '/assets/js/modale.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-menu-burger-script', get_template_directory_uri() . '/assets/js/menu-burger.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), '1.0.0', true);
 }
@@ -351,17 +352,6 @@ function plus_photos() {
 }
 add_action('wp_ajax_plus_photos', 'plus_photos');
 add_action('wp_ajax_nopriv_plus_photos', 'plus_photos');
-
-
-
-
-
-
-/******************************************************/
-/*********CATEGORIES DANS LA MODALE LIGHTBOX***********/
-/******************************************************/
-
-
 
 
 /******************************************************/

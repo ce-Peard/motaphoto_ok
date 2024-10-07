@@ -35,7 +35,8 @@ get_header();
 			<div class="photo-contact">
 				<div class="photo-contact-content">
 					<p>Cette photo vous intéresse ?</p>
-					<?php get_template_part('template-parts/contact', 'modale'); ?>
+					<button id="mota_Btn_contact">Contact</button>
+					<?php get_template_part('template-parts/modale'); ?>
 				</div>
 				<div class="photo-navigation">
 					<div class="photo-navigation-content">

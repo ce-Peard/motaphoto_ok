@@ -32,7 +32,7 @@
 				the_custom_logo();
 				?>
 			</div>
-
+			<?php get_template_part('template-parts/modale'); ?>
 			<nav id="site-navigation" class="main-navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'nathalie-mota'); ?></button>
 				<?php
