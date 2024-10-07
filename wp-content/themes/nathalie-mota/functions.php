@@ -28,11 +28,14 @@ function nathaliemota_enqueue_styles()
 	wp_enqueue_style('lightbox-style', get_template_directory_uri() . '/assets/css/lightbox.css', array(), '1.0.0');
 	wp_enqueue_style('related-photo__info-style', get_template_directory_uri() . '/assets/css/related-photo.css', array(), '1.0.0');
 	wp_enqueue_style('single-photo-page-style', get_template_directory_uri() . '/assets/css/single-photo-page.css', array(), '1.0.0');
+	wp_enqueue_style('thumbnail-preview-style', get_template_directory_uri() . '/assets/css/thumbnail-preview.css', array(), '1.0.0');
 	wp_enqueue_style('media-queries-style', get_template_directory_uri() . '/assets/css/media-queries.css', array(), '1.0.0');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('nathaliemota-main-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('nathaliemota-load-more-photos-script', get_template_directory_uri() . '/assets/js/load-more-photos.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-modale-contact-script', get_template_directory_uri() . '/assets/js/modale.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-menu-burger-script', get_template_directory_uri() . '/assets/js/menu-burger.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('nathaliemota-thumbnail-preview-script', get_template_directory_uri() . '/assets/js/thumbnail-preview.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'nathaliemota_enqueue_styles');

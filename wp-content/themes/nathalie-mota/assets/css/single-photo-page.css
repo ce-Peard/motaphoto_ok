@@ -25,7 +25,6 @@
   font-weight: 400 !important;
   line-height: 20.73px;
 }
-.photo-thumbnail,
 .photo-details-container {
   flex: 1;
 }
@@ -58,49 +57,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/*********PHOTOS NAVIGATION**********/
-.photo-navigation {
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  height: 90%;
-  flex-direction: column-reverse;
-}
-/*********FLECHES NAVIGATION**********/
-.nav-link {
-  position: relative;
-  display: inline-block;
-  margin: 0 10px;
-}
-.nav-link img {
-  display: block;
-}
-.thumbnail-container {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-.nav-thumbnail {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  display: none;
-  z-index: 1000;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.nav-thumbnail img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
 #mota_Btn_contact {
   display: flex;
   justify-content: center;
@@ -121,3 +77,5 @@
   color: #ffffff;
   background-color: #000000;
 }
+
+

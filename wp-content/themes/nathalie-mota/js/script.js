@@ -50,93 +50,10 @@
   });
 })(jQuery);
 
-/****************************************************/
-/*********APPEL AJAX PHOTOS SUPPLEMENTAIRES**********/
-/****************************************************/
 
 
-(function ($) {
-  $(document).ready(function () {
-    // ... code existant pour les filtres ...
-
-    let currentPage = 1;
-    let isLoading = false;
-    const loadMoreButton = $('#load-more-photos');
-    const photoGallery = $('.photo-gallery');
-    const ajaxurl = $('#ajaxurl').val();
-    const nonce = loadMoreButton.data('nonce');
-
-    function loadMorePhotos() {
-      if (isLoading) return;
-      
-      isLoading = true;
-      console.log('Loading more photos...'); // Log pour vérifier l'appel
-      loadMoreButton.prop('disabled', true); // Désactiver le bouton immédiatement
-
-      const data = {
-        action: 'plus_photos',
-        nonce: nonce,
-        page: currentPage + 1
-      };
-
-      $.ajax({
-        url: ajaxurl,
-        type: 'post',
-        dataType: 'json',
-        data: data,
-        beforeSend: function() {
-          loadMoreButton.text('Chargement...').prop('disabled', true);
-        },
-        success: function(response) {
-          if (response.success && response.data.html) {
-            currentPage++;
-            photoGallery.append(response.data.html);
-            
-            loadMoreButton.text('Charger plus').prop('disabled', !response.data.has_more);
-          } else {
-            loadMoreButton.text('Charger plus').prop('disabled', true);
-          }
-        },
-        error: function(xhr, status, error) {
-          console.error('Erreur AJAX:', status, error);
-          loadMoreButton.text('Erreur de chargement').prop('disabled', false);
-        },
-        complete: function() {
-          isLoading = false;
-        }
-      });
-    }
-
-    loadMoreButton.off('click').on('click', loadMorePhotos); // Assurez-vous que l'événement est attaché une seule fois
-
-  });
-})(jQuery);
 
 
-/*******************************************/
-/*********PREVIEW PHOTO NAVIGATION**********/
-/*******************************************/
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('.nav-link');
-  const thumbnailPreview = document.getElementById('thumbnail-preview');
-
-  navLinks.forEach(link => {
-      link.addEventListener('mouseover', function() {
-          const thumbnailUrl = this.getAttribute('data-thumbnail');
-          console.log('Thumbnail URL:', thumbnailUrl); // Log pour vérifier l'URL de la miniature
-          if (thumbnailUrl) {
-              thumbnailPreview.style.setProperty('background-image', `url(${thumbnailUrl})`, 'important');
-              thumbnailPreview.style.display = 'block';
-          } else {
-              console.log('No thumbnail URL found');
-          }
-      });
-
-      link.addEventListener('mouseout', function() {
-          thumbnailPreview.style.display = 'none';
-      });
-  });
-});
 
 
 
