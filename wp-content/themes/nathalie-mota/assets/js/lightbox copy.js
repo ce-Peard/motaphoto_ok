@@ -6,8 +6,6 @@ class Lightbox {
     this.attachEvents();
     document.body.appendChild(this.element);
     this.hide();
-    this.images = [];
-    this.currentIndex = 0;
   }
 
   buildDOM() {
@@ -34,7 +32,7 @@ class Lightbox {
     this.element.querySelector('.lightbox__prev').addEventListener('click', () => this.prev());
   }
 
-  loadImage(imageData) {
+  loadImage(url) {
     const container = this.element.querySelector(".lightbox__image");
     const loader = this.element.querySelector(".lightbox__loader");
     loader.style.display = 'block';
@@ -45,11 +43,12 @@ class Lightbox {
       loader.style.display = 'none';
       container.appendChild(img);
     };
-    img.src = imageData.src;
+    img.src = url;
   }
 
-  show(clickedIndex) {
-    this.currentIndex = clickedIndex;
+  show(images, index) {
+    this.images = images;
+    this.currentIndex = index;
     this.element.style.display = 'flex';
     this.loadImage(this.images[this.currentIndex]);
     this.updateInfo();
@@ -72,47 +71,36 @@ class Lightbox {
   }
 
   updateInfo() {
-    const imageData = this.images[this.currentIndex];
-    this.element.querySelector('.lightbox__ref').textContent = imageData.ref;
-    this.element.querySelector('.lightbox__category').textContent = imageData.category;
+    const svgElement = document.querySelectorAll('.related-photo a .plein-ecran svg')[this.currentIndex];
+    const ref = svgElement.getAttribute('data-ref');
+    const category = svgElement.getAttribute('data-category');
+    this.element.querySelector('.lightbox__ref').textContent = ref;
+    this.element.querySelector('.lightbox__category').textContent = category;
   }
 }
 
 // Création d'une seule instance de Lightbox
 const lightbox = new Lightbox();
 
-let isInitialized = false;
-
 function initLightbox() {
-  if (isInitialized) {
-    return;
-  }
-
   const links = document.querySelectorAll('.related-photo a');
-  lightbox.images = Array.from(links).map(link => ({
-    src: link.querySelector('img').getAttribute('src'),
-    ref: link.querySelector('.plein-ecran svg').getAttribute('data-ref'),
-    category: link.querySelector('.plein-ecran svg').getAttribute('data-category')
-  }));
+  const images = Array.from(links).map(link => link.querySelector('img').getAttribute('src'));
 
   links.forEach((link, index) => {
     const svgLink = link.querySelector('.plein-ecran svg');
     if (svgLink) {
       svgLink.addEventListener("click", (e) => {
         e.preventDefault();
-        lightbox.show(index);
+        const ref = svgLink.getAttribute('data-ref');
+        const category = svgLink.getAttribute('data-category');
+        lightbox.show(images, index);
       });
     }
   });
-
-  isInitialized = true;
 }
 
 // Initialisation initiale
 initLightbox();
 
 // Réinitialisation après chargement AJAX
-document.addEventListener('ajaxComplete', () => {
-  isInitialized = false;
-  setTimeout(initLightbox, 100);
-});
+document.addEventListener('ajaxComplete', initLightbox);

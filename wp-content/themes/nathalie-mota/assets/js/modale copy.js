@@ -7,6 +7,9 @@ jQuery(document).ready(function ($) {
 
   // Ouverture de la modale par le bouton single-photos.php
   $("#mota_Btn_contact").on("click", function () {
+    var refPhoto = $("#ref-photo").text().replace("Référence : ", "");
+    console.log("Référence de la photo :", refPhoto); // Ajoutons cette ligne pour le débogage
+    $("#myModal").find('input[name="ref-photo"]').val(refPhoto);
     $("#myModal").show();
   });
 
