@@ -32,7 +32,7 @@
         datatype: "html",
         data: data,
         success: function (response) {
-          // Mettre à jour le contenu de la galerie avec les nouveaux résultats
+          // Met à jour le contenu de la galerie avec les nouveaux résultats
           console.log("Réponse AJAX:", response);
 
           const gallery = $(".photo-gallery");

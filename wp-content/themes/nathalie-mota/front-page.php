@@ -47,7 +47,7 @@ get_header();
 				<option value=""></option> <!-- Option vide pour réinitialiser -->
 				<?php
 				$formats = get_terms(array(
-					'taxonomy' => 'format', // Remplacez par la taxonomie appropriée
+					'taxonomy' => 'format',
 					'hide_empty' => false,
 				));
 				if (!empty($formats) && !is_wp_error($formats)) {
@@ -81,7 +81,7 @@ get_header();
 		get_template_part('template-parts/photo-block');
 		?>
 	</section>
-	<!-- Load More -->
+	<!-- Charger plus -->
 	<div class="load-more-container">
 		<button
 			id="load-more-photos"
