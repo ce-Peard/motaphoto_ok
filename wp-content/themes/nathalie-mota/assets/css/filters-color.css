@@ -41,10 +41,27 @@
     display: none;
 }
 
-/* COULEUR SELECTION */
-.select2-container--open .select2-results__option--highlighted {
-    background-color: #ff0000 !important; /* Remplacez par la couleur de votre choix */
-    color: #ffffff !important; /* Optionnel : changez la couleur du texte */
+/* SELECTION COULEUR */
+/* État par défaut */
+.select2-container--default .select2-results__option {
+    background-color: white !important;
+    color: #000;
+}
+.select2-container--default .select2-results__option--selected {
+    background-color: #E00000 !important;
+    color: #ffff !important;
+}
+.select2-container--default .select2-results__option:hover {
+    background-color: #FE5858 !important;
+    color: #000000 !important;
+}
+.select2-container--default .select2-results__option:visited {
+    background-color: #FFD6D6 !important;
+    color: #000000 !important;
+}
+.select2-container--default .select2-results__option.visited {
+    background-color: #FFD6D6 !important;
+    color: #000000 !important;
 }
 
 /* EMPLACEMENT RESET */
@@ -57,6 +74,15 @@
 .select2-selection__rendered {
     text-transform: uppercase !important;
 }
+
+/* Assurez-vous que le premier élément a un fond blanc */
+.select2-container--default .select2-results__option:first-child {
+    background-color: white !important;
+    color: #000; /* Couleur du texte */
+}
+
+
+
 
 
 
