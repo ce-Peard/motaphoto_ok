@@ -30,27 +30,34 @@
   font-size: var(--filter-menu-font-size);
   line-height: var(--filter-menu-line-height);
 } 
+
+/* SUPPRESSION BARRE DE RECHERCHE*/
 .select2-search {
   display: none !important;
 }
+
+/* SUPPRESSION TITRE RESET */
 .select2-results__option[aria-disabled="true"] {
     display: none;
 }
+
+/* COULEUR SELECTION */
 .select2-container--open .select2-results__option--highlighted {
     background-color: #ff0000 !important; /* Remplacez par la couleur de votre choix */
     color: #ffffff !important; /* Optionnel : changez la couleur du texte */
 }
+
+/* EMPLACEMENT RESET */
 .select2-container--open .select2-results__option[data-select2-id*="reset"] {
     height: var(--filter-menu-line-height) !important;
     padding: 10px !important;
 }
 
-/* 
-.filter-uppercase {
-  text-transform: uppercase;
+/* UPPERCASE */
+.select2-selection__rendered {
+    text-transform: uppercase !important;
 }
-.filter-uppercase option {
-  text-transform: capitalize;
-}
+
+
 
 
