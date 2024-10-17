@@ -22,6 +22,7 @@ function nathaliemota_enqueue_styles()
 {
 	wp_enqueue_style('menu-header-style', get_template_directory_uri() . '/assets/css/header.css', array(), '1.0.0');
 	wp_enqueue_style('menu-footer-style', get_template_directory_uri() . '/assets/css/footer.css', array(), '1.0.0');
+	wp_enqueue_style('filters-color-style', get_template_directory_uri() . '/assets/css/filters-color.css', array(), '1.0.0');
 	wp_enqueue_style('modale-contact-style', get_template_directory_uri() . '/assets/css/modale-contact.css', array(), '1.0.0');
 	wp_enqueue_style('menu-burger-style', get_template_directory_uri() . '/assets/css/menu-burger.css', array(), '1.0.0');
 	wp_enqueue_style('front-page-style', get_template_directory_uri() . '/assets/css/front-page.css', array(), '1.0.0');
@@ -30,13 +31,20 @@ function nathaliemota_enqueue_styles()
 	wp_enqueue_style('single-photo-page-style', get_template_directory_uri() . '/assets/css/single-photo-page.css', array(), '1.0.0');
 	wp_enqueue_style('thumbnail-preview-style', get_template_directory_uri() . '/assets/css/thumbnail-preview.css', array(), '1.0.0');
 	wp_enqueue_style('media-queries-style', get_template_directory_uri() . '/assets/css/media-queries.css', array(), '1.0.0');
+	// Ajout de Select2 CSS
+	wp_enqueue_style('select2-css', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css', array(), '4.1.0-rc.0');
+
 	wp_enqueue_script('jquery');
+	// Ajout de Select2 JavaScript
+	wp_enqueue_script('select2-js', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js', array('jquery'), '4.1.0-rc.0', true);
 	wp_enqueue_script('nathaliemota-main-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('nathaliemota-select2-script', get_template_directory_uri() . '/assets/js/select2.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-load-more-photos-script', get_template_directory_uri() . '/assets/js/load-more-photos.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-modale-contact-script', get_template_directory_uri() . '/assets/js/modale.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-menu-burger-script', get_template_directory_uri() . '/assets/js/menu-burger.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-thumbnail-preview-script', get_template_directory_uri() . '/assets/js/thumbnail-preview.js', array('jquery'), '1.0.0', true);
 	wp_enqueue_script('nathaliemota-lightbox-script', get_template_directory_uri() . '/assets/js/lightbox.js', array('jquery'), '1.0.0', true);
+	wp_enqueue_script('nathaliemota-filters-color-script', get_template_directory_uri() . '/assets/js/filters-color.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'nathaliemota_enqueue_styles');
 

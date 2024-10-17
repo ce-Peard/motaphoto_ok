@@ -7,10 +7,7 @@
   --banner-line-height: 142.18px;
   --banner-stroke-width: 2px;
   --banner-stroke-color: rgb(255, 252, 252);
-  --filter-container-width: 1148px;
-  --filter-menu-width: 260px;
-  --filter-menu-font-size: 12px;
-  --filter-menu-line-height: 18px;
+  --photo-gallery-width: 1148px;
   --load-more-width: 272px;
   --load-more-height: 50px;
   --load-more-font-size: 12px;
@@ -52,38 +49,6 @@
   z-index: 20;
   padding: 0 20px;
 }
-/*********FILTRES MENUS DEROULANTS*********/
-.filter-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px auto 20px;
-  width: var(--filter-container-width);
-}
-.filter-uppercase {
-  text-transform: uppercase;
-}
-.filter-uppercase option {
-  text-transform: capitalize;
-}
-.filter-container1 {
-  display: flex;
-  gap: 20px;
-}
-#menu1-categories,
-#menu2-formats,
-#menu3-tri {
-  padding: 10px;
-  width: var(--filter-menu-width);
-  height: auto;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: var(--filter-menu-font-size);
-  line-height: var(--filter-menu-line-height);
-}
 /*********GRID PHOTO GALLERY**********/
 .photo-gallery {
   display: grid;
@@ -94,7 +59,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   width: 100%;
-  max-width: var(--filter-container-width);
+  max-width: var(--photo-gallery-width);
 }
 /*********LOAD MORE PHOTOS**********/
 #load-more-photos {

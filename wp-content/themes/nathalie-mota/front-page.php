@@ -27,8 +27,8 @@ get_header();
 			<input type="hidden" name="nonce" id='nonce' value="<?php echo wp_create_nonce('nathalie_mota_nonce'); ?>">
 			<input type="hidden" name="ajaxurl" id='ajaxurl' value="<?php echo admin_url('admin-ajax.php'); ?>">
 			<select name="categories" id="menu1-categories" aria-label="Catégories" class="filter-uppercase">
-				<option value="" disabled selected hidden>Catégories</option>
-				<option value=""></option> <!-- Option vide pour réinitialiser -->
+				<option value="" disabled selected>Catégories</option> <!-- Titre affiché -->
+				<option value="reset" class="option-reset"></option> <!-- Option vide pour réinitialiser -->
 				<?php
 				$categories = get_terms(array(
 					'taxonomy' => 'categorie',
@@ -43,8 +43,8 @@ get_header();
 			</select>
 			<!-- Deuxième menu déroulant -->
 			<select name="formats" id="menu2-formats" aria-label="Formats" class="filter-uppercase">
-				<option value="" disabled selected hidden>Formats</option>
-				<option value=""></option> <!-- Option vide pour réinitialiser -->
+				<option value="" disabled selected>Formats</option> <!-- Titre affiché -->
+				<option value="reset" class="option-reset"></option> <!-- Option vide pour réinitialiser -->
 				<?php
 				$formats = get_terms(array(
 					'taxonomy' => 'format',
@@ -61,8 +61,8 @@ get_header();
 		<div class="filter-container2">
 			<!-- Troisième menu déroulant -->
 			<select name="tri" id="menu3-tri" aria-label="Trier par" class="filter-uppercase">
-				<option value="" disabled selected hidden>Trier par</option>
-				<option value=""></option> <!-- Option vide pour réinitialiser -->
+				<option value="" disabled selected>Trier par</option> <!-- Titre affiché -->
+				<option value="reset class="option-reset""></option> <!-- Option vide pour réinitialiser -->
 				<option value="date_desc">Photos les plus récentes</option>
 				<option value="date_asc">Photos les plus anciennes</option>
 			</select>

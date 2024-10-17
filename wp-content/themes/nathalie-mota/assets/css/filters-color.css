@@ -1,0 +1,56 @@
+/*********FILTRES MENUS DEROULANTS*********/
+:root {
+  --filter-container-width: 1148px;
+  --filter-menu-width: 260px;
+  --filter-menu-font-size: 12px;
+  --filter-menu-line-height: 18px;
+}
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto 20px;
+  width: var(--filter-container-width);
+}
+.filter-container1 {
+    display: flex;
+    gap: 20px;
+}
+#menu1-categories,
+#menu2-formats,
+#menu3-tri {
+  padding: 10px;
+  width: var(--filter-menu-width);
+  height: auto;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: var(--filter-menu-font-size);
+  line-height: var(--filter-menu-line-height);
+} 
+.select2-search {
+  display: none !important;
+}
+.select2-results__option[aria-disabled="true"] {
+    display: none;
+}
+.select2-container--open .select2-results__option--highlighted {
+    background-color: #ff0000 !important; /* Remplacez par la couleur de votre choix */
+    color: #ffffff !important; /* Optionnel : changez la couleur du texte */
+}
+.select2-container--open .select2-results__option[data-select2-id*="reset"] {
+    height: var(--filter-menu-line-height) !important;
+    padding: 10px !important;
+}
+
+/* 
+.filter-uppercase {
+  text-transform: uppercase;
+}
+.filter-uppercase option {
+  text-transform: capitalize;
+}
+
+
