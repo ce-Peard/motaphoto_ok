@@ -44,23 +44,19 @@
 /* SELECTION COULEUR */
 /* État par défaut */
 .select2-container--default .select2-results__option {
-    background-color: white !important;
-    color: #000;
+    background-color: transparent !important;
+    color: #000 !important;
 }
 .select2-container--default .select2-results__option--selected {
     background-color: #E00000 !important;
     color: #ffff !important;
 }
 .select2-container--default .select2-results__option:hover {
-    background-color: #FE5858 !important;
-    color: #000000 !important;
-}
-.select2-container--default .select2-results__option:visited {
     background-color: #FFD6D6 !important;
     color: #000000 !important;
 }
 .select2-container--default .select2-results__option.visited {
-    background-color: #FFD6D6 !important;
+    background-color: #FE5858 !important;
     color: #000000 !important;
 }
 

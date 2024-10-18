@@ -87,7 +87,39 @@ function filter_images()
 add_action('wp_ajax_filter_images', 'filter_images');
 add_action('wp_ajax_nopriv_filter_images', 'filter_images');
 
+/**********************************************/
+/*********RÉINITIALISATION DES FILTRES*********/
+/**********************************************/
 
+function reset_filters() {
+    check_ajax_referer('filter_nonce', 'nonce');
+
+    $args = array(
+        'post_type' => 'photos',
+        'posts_per_page' => 8,
+        'orderby' => 'date',
+        'order' => 'DESC',
+    );
+
+    $query = new WP_Query($args);
+
+    $html = '';
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            ob_start();
+            get_template_part('template-parts/photo-block-ajax');
+            $html .= ob_get_clean();
+        }
+    } else {
+        $html = '<p>Aucune image trouvée.</p>';
+    }
+
+    wp_reset_postdata();
+    wp_send_json_success($html);
+}
+add_action('wp_ajax_reset_filters', 'reset_filters');
+add_action('wp_ajax_nopriv_reset_filters', 'reset_filters');
 
 /********************************************************/
 /*********CHARGE LE SCRIPT plus-photos-script***********/

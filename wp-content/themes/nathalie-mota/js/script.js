@@ -32,9 +32,7 @@
         datatype: "html",
         data: data,
         success: function (response) {
-          // Met à jour le contenu de la galerie avec les nouveaux résultats
           console.log("Réponse AJAX:", response);
-
           const gallery = $(".photo-gallery");
           gallery.html(response);
         },
@@ -48,6 +46,7 @@
 
   });
 })(jQuery);
+
 
 
 
